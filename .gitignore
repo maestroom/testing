@@ -1,5 +1,6 @@
 assets/*/	
-runtime/*	
+runtime/*
+!runtime/.gitignore	
 config/db.php
 config/web.php
 
