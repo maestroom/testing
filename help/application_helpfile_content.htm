@@ -1,0 +1,649 @@
+<!DOCTYPE HTML>
+<html><head>
+   <title>IS-A-TASK User Help Manual</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+   <!-- This line includes the general project style sheet (not required) -->
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <!-- This block defines the styles of the TOC headings, change them as needed -->
+   <style type="text/css">
+       body { background:#FFF; }
+       .navbar   { font-size: 120%; }
+
+       .heading1 { font-family: Arial,Helvetica; font-weight: normal; font-size: 10pt; color: #000000; text-decoration: none; }
+       .heading2 { font-family: Arial,Helvetica; font-weight: normal; font-size: 10pt; color: #000000; text-decoration: none; }
+       .heading3 { font-family: Arial,Helvetica; font-weight: normal; font-size: 10pt; color: #000000; text-decoration: none; }
+       .heading4 { font-family: Arial,Helvetica; font-weight: normal; font-size: 10pt; color: #000000; text-decoration: none; }
+       .heading5 { font-family: Arial,Helvetica; font-weight: normal; font-size: 10pt; color: #000000; text-decoration: none; }
+       .heading6 { font-family: Arial,Helvetica; font-weight: normal; font-size: 10pt; color: #000000; text-decoration: none; }
+
+       .hilight1 { font-family: Arial,Helvetica; font-weight: normal; font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight2 { font-family: Arial,Helvetica; font-weight: normal; font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight3 { font-family: Arial,Helvetica; font-weight: normal; font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight4 { font-family: Arial,Helvetica; font-weight: normal; font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight5 { font-family: Arial,Helvetica; font-weight: normal; font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight6 { font-family: Arial,Helvetica; font-weight: normal; font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+
+       /* TOC LIST CSS */
+       #toc    { padding: 0; margin: 0; }
+       #toc li { margin-top: 2px; }
+       #toc ul { padding-left:0; padding-right:0 }
+       /* TOC LIST CSS */
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript">
+     var parentScope = (parent.hmNavigationFrame);
+     if (!parentScope) {
+		      var s = document.createElement("script");
+		      s.setAttribute("type","text/javascript");
+		      s.setAttribute("src", "helpman_navigation.js");
+		      document.getElementsByTagName("head")[0].appendChild(s);
+	    }
+     else {
+       if (initialtocstate != "expandall") parent.hmAddCss(document, "#toc li ul { display: none }");
+     }
+     function loadicons() { var icons = new Array(); for (i=0; i<arguments.length; i++) { icons[i] = new Image(); icons[i].src = arguments[i]; } }
+     function loadtoc() { if (parentScope) parent.loadstate(document.getElementById("toc")); else loadstate(document.getElementById("toc")); }
+     function savetoc() { if (parentScope) parent.savestate(document.getElementById("toc")); else savestate(document.getElementById("toc")); }
+     function clicked(node, event) { deselect(); if (parentScope) parent.hmNodeClicked(node, event); else hmNodeClicked(node, event); }
+     function dblclicked(node) { if (parentScope) parent.hmNodeDblclicked(node); else hmNodeDblclicked(node); }
+     function deselect() { if (window.getSelection) window.getSelection().removeAllRanges(); else if (document.selection) document.selection.empty(); }
+     $(document).ready(function(){
+       loadtoc();
+       $(window).onunload = savetoc;
+     });
+   </script>
+</head>
+<body>
+<p class="navbar"><strong>Contents</strong>
+ | <a href="application_helpfile_kwindex.htm">Index</a>
+ | <a href="application_helpfile_ftsearch.htm">Search</a>
+</p>
+<hr/>
+
+
+  <!-- Place holder for the TOC - this variable is REQUIRED! -->
+  <ul id="toc" style="list-style-type:none;display:block;padding-left:0">
+<li class="heading1" id="i1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading1" id="a1" href="about_isatask.htm" target="hmcontent"><span class="heading1" id="s1">About IS-A-TASK</span></a>
+</li>
+<li class="heading1" id="i2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading1" id="a2" href="supported_browsers.htm" target="hmcontent"><span class="heading1" id="s2">Supported Browsers</span></a>
+</li>
+<li class="heading1" id="i3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading1" id="a3" href="technical_support.htm" target="hmcontent"><span class="heading1" id="s3">Technical Support</span></a>
+</li>
+<li class="heading1" id="i4" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onClick="return clicked(this,event)"><a class="heading1" id="a4" href="getting_started.htm" target="hmcontent"><span class="heading1" id="s4" onDblClick="return dblclicked(this)">Getting Started</span></a>
+<ul id="ul4" style="list-style-type:none">
+<li class="heading2" id="i4.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading2" id="a4.1" href="application_workflow.htm" target="hmcontent"><span class="heading2" id="s4.1">Application Workflow</span></a>
+</li>
+<li class="heading2" id="i4.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading2" id="a4.2" href="teams_workflow_setup.htm" target="hmcontent"><span class="heading2" id="s4.2">Teams Workflow Setup</span></a>
+</li>
+<li class="heading2" id="i4.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading2" id="a4.3" href="client_case_setup.htm" target="hmcontent"><span class="heading2" id="s4.3">Client/Case Setup</span></a>
+</li>
+<li class="heading2" id="i4.4" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading2" id="a4.4" href="user_setup.htm" target="hmcontent"><span class="heading2" id="s4.4">User Setup</span></a>
+</li>
+<li class="heading2" id="i4.5" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading2" id="a4.5" href="billing_setup.htm" target="hmcontent"><span class="heading2" id="s4.5">Billing Setup (Optional)</span></a>
+</li>
+<li class="heading2" id="i4.6" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading2" id="a4.6" href="getting_started_submit_new_project_process.htm" target="hmcontent"><span class="heading2" id="s4.6">Submit New Project Process</span></a>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i5" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onClick="return clicked(this,event)"><a class="heading1" id="a5" href="application_layout.htm" target="hmcontent"><span class="heading1" id="s5" onDblClick="return dblclicked(this)">Application Layout</span></a>
+<ul id="ul5" style="list-style-type:none">
+<li class="heading2" id="i5.1" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onClick="return clicked(this,event)"><a class="heading2" id="a5.1" href="options.htm" target="hmcontent"><span class="heading2" id="s5.1" onDblClick="return dblclicked(this)">Options</span></a>
+<ul id="ul5.1" style="list-style-type:none">
+<li class="heading3" id="i5.1.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading3" id="a5.1.1" href="change_password.htm" target="hmcontent"><span class="heading3" id="s5.1.1">Change Password</span></a>
+</li>
+<li class="heading3" id="i5.1.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading3" id="a5.1.2" href="subscribe_to_email_alerts.htm" target="hmcontent"><span class="heading3" id="s5.1.2">Subscribe To Email Alerts</span></a>
+</li>
+<li class="heading3" id="i5.1.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading3" id="a5.1.3" href="session_timeout_preference.htm" target="hmcontent"><span class="heading3" id="s5.1.3">Session Timeout Preference</span></a>
+</li>
+<li class="heading3" id="i5.1.4" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading3" id="a5.1.4" href="timezone_preference.htm" target="hmcontent"><span class="heading3" id="s5.1.4">Timezone Preference</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i5.2" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onClick="return clicked(this,event)"><a class="heading2" id="a5.2" href="assignments.htm" target="hmcontent"><span class="heading2" id="s5.2" onDblClick="return dblclicked(this)">Assignments</span></a>
+<ul id="ul5.2" style="list-style-type:none">
+<li class="heading3" id="i5.2.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading3" id="a5.2.1" href="assignments_system_alerts.htm" target="hmcontent"><span class="heading3" id="s5.2.1">Assignments System Alerts</span></a>
+</li>
+<li class="heading3" id="i5.2.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading3" id="a5.2.2" href="case_assignments_status_grid.htm" target="hmcontent"><span class="heading3" id="s5.2.2">Case Assignments Status Grid</span></a>
+</li>
+<li class="heading3" id="i5.2.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading3" id="a5.2.3" href="team_assignments_status_grid.htm" target="hmcontent"><span class="heading3" id="s5.2.3">Team Assignments Status Grid</span></a>
+</li>
+<li class="heading3" id="i5.2.4" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading3" id="a5.2.4" href="todays_activity.htm" target="hmcontent"><span class="heading3" id="s5.2.4">Today's Activity</span></a>
+</li>
+<li class="heading3" id="i5.2.5" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading3" id="a5.2.5" href="my_events.htm" target="hmcontent"><span class="heading3" id="s5.2.5">My Events</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i5.3" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onClick="return clicked(this,event)"><a class="heading2" id="a5.3" href="media.htm" target="hmcontent"><span class="heading2" id="s5.3" onDblClick="return dblclicked(this)">Media</span></a>
+<ul id="ul5.3" style="list-style-type:none">
+<li class="heading3" id="i5.3.1" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onClick="return clicked(this,event)"><a class="heading3" id="a5.3.1" href="media_inventory.htm" target="hmcontent"><span class="heading3" id="s5.3.1" onDblClick="return dblclicked(this)">Media Inventory</span></a>
+<ul id="ul5.3.1" style="list-style-type:none">
+<li class="heading4" id="i5.3.1.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading4" id="a5.3.1.1" href="add_media.htm" target="hmcontent"><span class="heading4" id="s5.3.1.1">Add Media</span></a>
+</li>
+<li class="heading4" id="i5.3.1.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading4" id="a5.3.1.2" href="delete_media.htm" target="hmcontent"><span class="heading4" id="s5.3.1.2">Delete Media</span></a>
+</li>
+<li class="heading4" id="i5.3.1.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading4" id="a5.3.1.3" href="edit_media.htm" target="hmcontent"><span class="heading4" id="s5.3.1.3">Edit Media</span></a>
+</li>
+<li class="heading4" id="i5.3.1.4" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onClick="return clicked(this,event)"><a class="heading4" id="a5.3.1.4" href="media_contents.htm" target="hmcontent"><span class="heading4" id="s5.3.1.4" onDblClick="return dblclicked(this)">Media Contents</span></a>
+<ul id="ul5.3.1.4" style="list-style-type:none">
+<li class="heading5" id="i5.3.1.4.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.3.1.4.1" href="add_media_contents.htm" target="hmcontent"><span class="heading5" id="s5.3.1.4.1">Add Media Contents</span></a>
+</li>
+<li class="heading5" id="i5.3.1.4.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.3.1.4.2" href="remove_media_contents.htm" target="hmcontent"><span class="heading5" id="s5.3.1.4.2">Remove Media Contents</span></a>
+</li>
+<li class="heading5" id="i5.3.1.4.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.3.1.4.3" href="edit_media_contents.htm" target="hmcontent"><span class="heading5" id="s5.3.1.4.3">Edit Media Contents</span></a>
+</li>
+<li class="heading5" id="i5.3.1.4.4" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.3.1.4.4" href="view_associated_cases.htm" target="hmcontent"><span class="heading5" id="s5.3.1.4.4">View Associated Cases</span></a>
+</li>
+</ul>
+</li>
+<li class="heading4" id="i5.3.1.5" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading4" id="a5.3.1.5" href="media_check_in_out.htm" target="hmcontent"><span class="heading4" id="s5.3.1.5">Media Check In/out</span></a>
+</li>
+<li class="heading4" id="i5.3.1.6" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading4" id="a5.3.1.6" href="media_chain_of_custody.htm" target="hmcontent"><span class="heading4" id="s5.3.1.6">Media Chain of Custody</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i5.4" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onClick="return clicked(this,event)"><a class="heading2" id="a5.4" href="mycases.htm" target="hmcontent"><span class="heading2" id="s5.4" onDblClick="return dblclicked(this)">My Cases</span></a>
+<ul id="ul5.4" style="list-style-type:none">
+<li class="heading3" id="i5.4.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading3" id="a5.4.1" href="my_cases_system_alerts.htm" target="hmcontent"><span class="heading3" id="s5.4.1">My Cases System Alerts</span></a>
+</li>
+<li class="heading3" id="i5.4.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading3" id="a5.4.2" href="my_cases_statistics.htm" target="hmcontent"><span class="heading3" id="s5.4.2">My Cases Statistics</span></a>
+</li>
+<li class="heading3" id="i5.4.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading3" id="a5.4.3" href="search_case_projects.htm" target="hmcontent"><span class="heading3" id="s5.4.3">Search Case Projects</span></a>
+</li>
+<li class="heading3" id="i5.4.4" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onClick="return clicked(this,event)"><a class="heading3" id="a5.4.4" href="my_case_portal.htm" target="hmcontent"><span class="heading3" id="s5.4.4" onDblClick="return dblclicked(this)">My Cases Portal</span></a>
+<ul id="ul5.4.4" style="list-style-type:none">
+<li class="heading4" id="i5.4.4.1" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onClick="return clicked(this,event)"><a class="heading4" id="a5.4.4.1" href="case_projects.htm" target="hmcontent"><span class="heading4" id="s5.4.4.1" onDblClick="return dblclicked(this)">Case Projects</span></a>
+<ul id="ul5.4.4.1" style="list-style-type:none">
+<li class="heading5" id="i5.4.4.1.1" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.4.4.1.1" href="submit_new_project.htm" target="hmcontent"><span class="heading5" id="s5.4.4.1.1" onDblClick="return dblclicked(this)">Submit New Case Project</span></a>
+<ul id="ul5.4.4.1.1" style="list-style-type:none">
+<li class="heading6" id="i5.4.4.1.1.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading6" id="a5.4.4.1.1.1" href="load_previous_workflow.htm" target="hmcontent"><span class="heading6" id="s5.4.4.1.1.1">Load Previous Workflow</span></a>
+</li>
+<li class="heading6" id="i5.4.4.1.1.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading6" id="a5.4.4.1.1.2" href="project_attach_media.htm" target="hmcontent"><span class="heading6" id="s5.4.4.1.1.2">Project Attach Media</span></a>
+</li>
+<li class="heading6" id="i5.4.4.1.1.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading6" id="a5.4.4.1.1.3" href="project_estimated_time.htm" target="hmcontent"><span class="heading6" id="s5.4.4.1.1.3">Project Estimated Time</span></a>
+</li>
+</ul>
+</li>
+<li class="heading5" id="i5.4.4.1.2" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.4.4.1.2" href="submit_saved_case_projects.htm" target="hmcontent"><span class="heading5" id="s5.4.4.1.2" onDblClick="return dblclicked(this)">Submit Saved Case Projects</span></a>
+<ul id="ul5.4.4.1.2" style="list-style-type:none">
+<li class="heading6" id="i5.4.4.1.2.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading6" id="a5.4.4.1.2.1" href="delete_saved_case_projects.htm" target="hmcontent"><span class="heading6" id="s5.4.4.1.2.1">Delete Saved Case Projects</span></a>
+</li>
+</ul>
+</li>
+<li class="heading5" id="i5.4.4.1.3" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.4.4.1.3" href="case_project_grid.htm" target="hmcontent"><span class="heading5" id="s5.4.4.1.3" onDblClick="return dblclicked(this)">Case Project Grid</span></a>
+<ul id="ul5.4.4.1.3" style="list-style-type:none">
+<li class="heading6" id="i5.4.4.1.3.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading6" id="a5.4.4.1.3.1" href="change_case_project.htm" target="hmcontent"><span class="heading6" id="s5.4.4.1.3.1">Change Case Project</span></a>
+</li>
+<li class="heading6" id="i5.4.4.1.3.2" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onClick="return clicked(this,event)"><a class="heading6" id="a5.4.4.1.3.2" href="track_case_project.htm" target="hmcontent"><span class="heading6" id="s5.4.4.1.3.2" onDblClick="return dblclicked(this)">Track Case Project</span></a>
+<ul id="ul5.4.4.1.3.2" style="list-style-type:none">
+<li class="heading6" id="i5.4.4.1.3.2.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading6" id="a5.4.4.1.3.2.1" href="case_task_assignments.htm" target="hmcontent"><span class="heading6" id="s5.4.4.1.3.2.1">Case Task Assignment</span></a>
+</li>
+<li class="heading6" id="i5.4.4.1.3.2.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading6" id="a5.4.4.1.3.2.2" href="case_task_status.htm" target="hmcontent"><span class="heading6" id="s5.4.4.1.3.2.2">Case Task Status</span></a>
+</li>
+<li class="heading6" id="i5.4.4.1.3.2.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading6" id="a5.4.4.1.3.2.3" href="cases_custodian_subtasks.htm" target="hmcontent"><span class="heading6" id="s5.4.4.1.3.2.3">Case Task Custodian Subtasks</span></a>
+</li>
+<li class="heading6" id="i5.4.4.1.3.2.4" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading6" id="a5.4.4.1.3.2.4" href="cases_billable_items.htm" target="hmcontent"><span class="heading6" id="s5.4.4.1.3.2.4">Case Task Billable Items</span></a>
+</li>
+<li class="heading6" id="i5.4.4.1.3.2.5" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading6" id="a5.4.4.1.3.2.5" href="cases_todo_items.htm" target="hmcontent"><span class="heading6" id="s5.4.4.1.3.2.5">Case Task ToDo Items</span></a>
+</li>
+<li class="heading6" id="i5.4.4.1.3.2.6" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading6" id="a5.4.4.1.3.2.6" href="post_case_project_comments_2.htm" target="hmcontent"><span class="heading6" id="s5.4.4.1.3.2.6">Post Case Project Comments</span></a>
+</li>
+</ul>
+</li>
+<li class="heading6" id="i5.4.4.1.3.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading6" id="a5.4.4.1.3.3" href="post_case_project_comments.htm" target="hmcontent"><span class="heading6" id="s5.4.4.1.3.3">Post Case Project Comments</span></a>
+</li>
+<li class="heading6" id="i5.4.4.1.3.4" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading6" id="a5.4.4.1.3.4" href="close_case_project.htm" target="hmcontent"><span class="heading6" id="s5.4.4.1.3.4">Close Case Project</span></a>
+</li>
+<li class="heading6" id="i5.4.4.1.3.5" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading6" id="a5.4.4.1.3.5" href="remove_case_project.htm" target="hmcontent"><span class="heading6" id="s5.4.4.1.3.5">Remove Case Project</span></a>
+</li>
+</ul>
+</li>
+<li class="heading5" id="i5.4.4.1.4" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.4.4.1.4" href="closed_case_projects.htm" target="hmcontent"><span class="heading5" id="s5.4.4.1.4" onDblClick="return dblclicked(this)">Closed Case Projects</span></a>
+<ul id="ul5.4.4.1.4" style="list-style-type:none">
+<li class="heading6" id="i5.4.4.1.4.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading6" id="a5.4.4.1.4.1" href="reopen_closed_case_projects.htm" target="hmcontent"><span class="heading6" id="s5.4.4.1.4.1">Reopen Closed Case Projects</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading4" id="i5.4.4.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading4" id="a5.4.4.2" href="case_budget.htm" target="hmcontent"><span class="heading4" id="s5.4.4.2">Case Budget</span></a>
+</li>
+<li class="heading4" id="i5.4.4.3" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onClick="return clicked(this,event)"><a class="heading4" id="a5.4.4.3" href="case_documents.htm" target="hmcontent"><span class="heading4" id="s5.4.4.3" onDblClick="return dblclicked(this)">Case Documents</span></a>
+<ul id="ul5.4.4.3" style="list-style-type:none">
+<li class="heading5" id="i5.4.4.3.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.4.4.3.1" href="create_case_folder.htm" target="hmcontent"><span class="heading5" id="s5.4.4.3.1">Create Case Folder</span></a>
+</li>
+<li class="heading5" id="i5.4.4.3.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.4.4.3.2" href="upload_case_file.htm" target="hmcontent"><span class="heading5" id="s5.4.4.3.2">Upload Case File</span></a>
+</li>
+<li class="heading5" id="i5.4.4.3.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.4.4.3.3" href="rename_case_folder_file.htm" target="hmcontent"><span class="heading5" id="s5.4.4.3.3">Rename Case Folder/File</span></a>
+</li>
+<li class="heading5" id="i5.4.4.3.4" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.4.4.3.4" href="delete_case_folder_file.htm" target="hmcontent"><span class="heading5" id="s5.4.4.3.4">Delete Case Folder/File</span></a>
+</li>
+<li class="heading5" id="i5.4.4.3.5" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.4.4.3.5" href="copy_case_folder_file.htm" target="hmcontent"><span class="heading5" id="s5.4.4.3.5">Copy Case Folder/File</span></a>
+</li>
+<li class="heading5" id="i5.4.4.3.6" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.4.4.3.6" href="cut_case_folder_file.htm" target="hmcontent"><span class="heading5" id="s5.4.4.3.6">Cut Case Folder/File</span></a>
+</li>
+<li class="heading5" id="i5.4.4.3.7" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.4.4.3.7" href="paste_case_folder_file.htm" target="hmcontent"><span class="heading5" id="s5.4.4.3.7">Paste Case Folder/File</span></a>
+</li>
+<li class="heading5" id="i5.4.4.3.8" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.4.4.3.8" href="edit_case_folder_file_permissions.htm" target="hmcontent"><span class="heading5" id="s5.4.4.3.8">Edit Case Folder/File Permissions</span></a>
+</li>
+<li class="heading5" id="i5.4.4.3.9" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.4.4.3.9" href="search_case_folder_file.htm" target="hmcontent"><span class="heading5" id="s5.4.4.3.9">Search Case Folder/File</span></a>
+</li>
+</ul>
+</li>
+<li class="heading4" id="i5.4.4.4" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onClick="return clicked(this,event)"><a class="heading4" id="a5.4.4.4" href="case_reports.htm" target="hmcontent"><span class="heading4" id="s5.4.4.4" onDblClick="return dblclicked(this)">Case Reports</span></a>
+<ul id="ul5.4.4.4" style="list-style-type:none">
+<li class="heading5" id="i5.4.4.4.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.4.4.4.1" href="case_project_transaction_activity.htm" target="hmcontent"><span class="heading5" id="s5.4.4.4.1">Case Project Transaction Activity</span></a>
+</li>
+<li class="heading5" id="i5.4.4.4.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.4.4.4.2" href="total_case_project_time_by_task.htm" target="hmcontent"><span class="heading5" id="s5.4.4.4.2">Total Case Project Time By Task</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i5.5" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onClick="return clicked(this,event)"><a class="heading2" id="a5.5" href="myteams.htm" target="hmcontent"><span class="heading2" id="s5.5" onDblClick="return dblclicked(this)">My Teams</span></a>
+<ul id="ul5.5" style="list-style-type:none">
+<li class="heading3" id="i5.5.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading3" id="a5.5.1" href="my_teams_system_alerts.htm" target="hmcontent"><span class="heading3" id="s5.5.1">My Teams System Alerts</span></a>
+</li>
+<li class="heading3" id="i5.5.2" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onClick="return clicked(this,event)"><a class="heading3" id="a5.5.2" href="my_teams_statistics.htm" target="hmcontent"><span class="heading3" id="s5.5.2" onDblClick="return dblclicked(this)">My Teams Statistics</span></a>
+<ul id="ul5.5.2" style="list-style-type:none">
+<li class="heading4" id="i5.5.2.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading4" id="a5.5.2.1" href="team_project_status_grid.htm" target="hmcontent"><span class="heading4" id="s5.5.2.1">Team Project Status Grid</span></a>
+</li>
+<li class="heading4" id="i5.5.2.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading4" id="a5.5.2.2" href="search_team_projects.htm" target="hmcontent"><span class="heading4" id="s5.5.2.2">Search Team Projects</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i5.5.3" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onClick="return clicked(this,event)"><a class="heading3" id="a5.5.3" href="my_team_portal.htm" target="hmcontent"><span class="heading3" id="s5.5.3" onDblClick="return dblclicked(this)">My Team Portal</span></a>
+<ul id="ul5.5.3" style="list-style-type:none">
+<li class="heading4" id="i5.5.3.1" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onClick="return clicked(this,event)"><a class="heading4" id="a5.5.3.1" href="team_projects.htm" target="hmcontent"><span class="heading4" id="s5.5.3.1" onDblClick="return dblclicked(this)">Team Projects</span></a>
+<ul id="ul5.5.3.1" style="list-style-type:none">
+<li class="heading5" id="i5.5.3.1.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.5.3.1.1" href="team_project_grid.htm" target="hmcontent"><span class="heading5" id="s5.5.3.1.1">Team Project Grid</span></a>
+</li>
+<li class="heading5" id="i5.5.3.1.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.5.3.1.2" href="team_project_instructions.htm" target="hmcontent"><span class="heading5" id="s5.5.3.1.2">Team Project Instructions</span></a>
+</li>
+<li class="heading5" id="i5.5.3.1.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.5.3.1.3" href="post_team_project_comments.htm" target="hmcontent"><span class="heading5" id="s5.5.3.1.3">Post Team Project Comments</span></a>
+</li>
+<li class="heading5" id="i5.5.3.1.4" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.5.3.1.4" href="track_team_project.htm" target="hmcontent"><span class="heading5" id="s5.5.3.1.4" onDblClick="return dblclicked(this)">Track Team Project</span></a>
+<ul id="ul5.5.3.1.4" style="list-style-type:none">
+<li class="heading6" id="i5.5.3.1.4.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading6" id="a5.5.3.1.4.1" href="team_task_grid.htm" target="hmcontent"><span class="heading6" id="s5.5.3.1.4.1">Team Task Grid</span></a>
+</li>
+<li class="heading6" id="i5.5.3.1.4.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading6" id="a5.5.3.1.4.2" href="team_task_assignments.htm" target="hmcontent"><span class="heading6" id="s5.5.3.1.4.2">Team Task Assignment</span></a>
+</li>
+<li class="heading6" id="i5.5.3.1.4.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading6" id="a5.5.3.1.4.3" href="team_task_status.htm" target="hmcontent"><span class="heading6" id="s5.5.3.1.4.3">Team Task Status</span></a>
+</li>
+<li class="heading6" id="i5.5.3.1.4.4" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading6" id="a5.5.3.1.4.4" href="team_custodians_subtasks.htm" target="hmcontent"><span class="heading6" id="s5.5.3.1.4.4">Team Custodian Subtasks</span></a>
+</li>
+<li class="heading6" id="i5.5.3.1.4.5" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading6" id="a5.5.3.1.4.5" href="team_billable_items.htm" target="hmcontent"><span class="heading6" id="s5.5.3.1.4.5">Team Billable Items</span></a>
+</li>
+<li class="heading6" id="i5.5.3.1.4.6" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading6" id="a5.5.3.1.4.6" href="team_todo_items.htm" target="hmcontent"><span class="heading6" id="s5.5.3.1.4.6">Team ToDo Items</span></a>
+</li>
+<li class="heading6" id="i5.5.3.1.4.7" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading6" id="a5.5.3.1.4.7" href="post_team_project_comments_2.htm" target="hmcontent"><span class="heading6" id="s5.5.3.1.4.7">Post Team Project Comment</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading4" id="i5.5.3.2" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onClick="return clicked(this,event)"><a class="heading4" id="a5.5.3.2" href="team_documents.htm" target="hmcontent"><span class="heading4" id="s5.5.3.2" onDblClick="return dblclicked(this)">Team Documents</span></a>
+<ul id="ul5.5.3.2" style="list-style-type:none">
+<li class="heading5" id="i5.5.3.2.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.5.3.2.1" href="create_team_folder.htm" target="hmcontent"><span class="heading5" id="s5.5.3.2.1">Create Team Folder</span></a>
+</li>
+<li class="heading5" id="i5.5.3.2.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.5.3.2.2" href="upload_team_file.htm" target="hmcontent"><span class="heading5" id="s5.5.3.2.2">Upload Team File</span></a>
+</li>
+<li class="heading5" id="i5.5.3.2.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.5.3.2.3" href="rename_team_folder_file.htm" target="hmcontent"><span class="heading5" id="s5.5.3.2.3">Rename Team Folder/File</span></a>
+</li>
+<li class="heading5" id="i5.5.3.2.4" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.5.3.2.4" href="delete_team_folder_file.htm" target="hmcontent"><span class="heading5" id="s5.5.3.2.4">Delete Team Folder/File</span></a>
+</li>
+<li class="heading5" id="i5.5.3.2.5" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.5.3.2.5" href="copy_team_folder_file.htm" target="hmcontent"><span class="heading5" id="s5.5.3.2.5">Copy Team Folder/File</span></a>
+</li>
+<li class="heading5" id="i5.5.3.2.6" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.5.3.2.6" href="cut_team_folder_file.htm" target="hmcontent"><span class="heading5" id="s5.5.3.2.6">Cut Team Folder/File</span></a>
+</li>
+<li class="heading5" id="i5.5.3.2.7" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.5.3.2.7" href="paste_team_folder_file.htm" target="hmcontent"><span class="heading5" id="s5.5.3.2.7">Paste Team Folder/File</span></a>
+</li>
+<li class="heading5" id="i5.5.3.2.8" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.5.3.2.8" href="edit_team_folder_file_permissions.htm" target="hmcontent"><span class="heading5" id="s5.5.3.2.8">Edit Team Folder/File Permissions</span></a>
+</li>
+<li class="heading5" id="i5.5.3.2.9" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.5.3.2.9" href="search_team_folder_file.htm" target="hmcontent"><span class="heading5" id="s5.5.3.2.9">Search Team Folder/File</span></a>
+</li>
+</ul>
+</li>
+<li class="heading4" id="i5.5.3.3" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onClick="return clicked(this,event)"><a class="heading4" id="a5.5.3.3" href="team_reports.htm" target="hmcontent"><span class="heading4" id="s5.5.3.3" onDblClick="return dblclicked(this)">Team Reports</span></a>
+<ul id="ul5.5.3.3" style="list-style-type:none">
+<li class="heading5" id="i5.5.3.3.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.5.3.3.1" href="team_project_transaction_activity.htm" target="hmcontent"><span class="heading5" id="s5.5.3.3.1">Team Project Transaction Activity</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i5.6" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onClick="return clicked(this,event)"><a class="heading2" id="a5.6" href="global_projects.htm" target="hmcontent"><span class="heading2" id="s5.6" onDblClick="return dblclicked(this)">Global Projects</span></a>
+<ul id="ul5.6" style="list-style-type:none">
+<li class="heading3" id="i5.6.1" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onClick="return clicked(this,event)"><a class="heading3" id="a5.6.1" href="dynamic_filters.htm" target="hmcontent"><span class="heading3" id="s5.6.1" onDblClick="return dblclicked(this)">Dynamic Filters</span></a>
+<ul id="ul5.6.1" style="list-style-type:none">
+<li class="heading4" id="i5.6.1.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading4" id="a5.6.1.1" href="filter_projects.htm" target="hmcontent"><span class="heading4" id="s5.6.1.1">Filter Projects</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i5.6.2" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onClick="return clicked(this,event)"><a class="heading3" id="a5.6.2" href="saved_filters.htm" target="hmcontent"><span class="heading3" id="s5.6.2" onDblClick="return dblclicked(this)">Saved Filters</span></a>
+<ul id="ul5.6.2" style="list-style-type:none">
+<li class="heading4" id="i5.6.2.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading4" id="a5.6.2.1" href="resubmit_saved_filters.htm" target="hmcontent"><span class="heading4" id="s5.6.2.1">Run Saved Filters</span></a>
+</li>
+<li class="heading4" id="i5.6.2.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading4" id="a5.6.2.2" href="perform_filter_options.htm" target="hmcontent"><span class="heading4" id="s5.6.2.2">Perform Filter Options</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i5.7" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onClick="return clicked(this,event)"><a class="heading2" id="a5.7" href="resources.htm" target="hmcontent"><span class="heading2" id="s5.7" onDblClick="return dblclicked(this)">Resources</span></a>
+<ul id="ul5.7" style="list-style-type:none">
+<li class="heading3" id="i5.7.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading3" id="a5.7.1" href="task_assignments.htm" target="hmcontent"><span class="heading3" id="s5.7.1">Task Assignments</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i5.8" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onClick="return clicked(this,event)"><a class="heading2" id="a5.8" href="billing.htm" target="hmcontent"><span class="heading2" id="s5.8" onDblClick="return dblclicked(this)">Billing</span></a>
+<ul id="ul5.8" style="list-style-type:none">
+<li class="heading3" id="i5.8.1" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onClick="return clicked(this,event)"><a class="heading3" id="a5.8.1" href="pricelist.htm" target="hmcontent"><span class="heading3" id="s5.8.1" onDblClick="return dblclicked(this)">Price List</span></a>
+<ul id="ul5.8.1" style="list-style-type:none">
+<li class="heading4" id="i5.8.1.1" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onClick="return clicked(this,event)"><a class="heading4" id="a5.8.1.1" href="internal_team_pricing.htm" target="hmcontent"><span class="heading4" id="s5.8.1.1" onDblClick="return dblclicked(this)">Internal Team Pricing</span></a>
+<ul id="ul5.8.1.1" style="list-style-type:none">
+<li class="heading5" id="i5.8.1.1.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.8.1.1.1" href="add_team_pricepoints.htm" target="hmcontent"><span class="heading5" id="s5.8.1.1.1">Add Team Price Points</span></a>
+</li>
+<li class="heading5" id="i5.8.1.1.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.8.1.1.2" href="remove_team_pricepoints.htm" target="hmcontent"><span class="heading5" id="s5.8.1.1.2">Remove Team Price Points</span></a>
+</li>
+<li class="heading5" id="i5.8.1.1.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.8.1.1.3" href="edit_team_pricepoints.htm" target="hmcontent"><span class="heading5" id="s5.8.1.1.3">Edit Team Price Points</span></a>
+</li>
+</ul>
+</li>
+<li class="heading4" id="i5.8.1.2" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onClick="return clicked(this,event)"><a class="heading4" id="a5.8.1.2" href="internal_shared_pricing.htm" target="hmcontent"><span class="heading4" id="s5.8.1.2" onDblClick="return dblclicked(this)">Internal Shared Pricing</span></a>
+<ul id="ul5.8.1.2" style="list-style-type:none">
+<li class="heading5" id="i5.8.1.2.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.8.1.2.1" href="add_shared_pricepoints.htm" target="hmcontent"><span class="heading5" id="s5.8.1.2.1">Add Shared Price Points</span></a>
+</li>
+<li class="heading5" id="i5.8.1.2.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.8.1.2.2" href="remove_shared_pricepoints.htm" target="hmcontent"><span class="heading5" id="s5.8.1.2.2">Remove Shared Pricepoints</span></a>
+</li>
+<li class="heading5" id="i5.8.1.2.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.8.1.2.3" href="edit_shared_pricepoints.htm" target="hmcontent"><span class="heading5" id="s5.8.1.2.3">Edit Shared Pricepoints</span></a>
+</li>
+</ul>
+</li>
+<li class="heading4" id="i5.8.1.3" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onClick="return clicked(this,event)"><a class="heading4" id="a5.8.1.3" href="client_preferred_pricing.htm" target="hmcontent"><span class="heading4" id="s5.8.1.3" onDblClick="return dblclicked(this)">Client Preferred Pricing</span></a>
+<ul id="ul5.8.1.3" style="list-style-type:none">
+<li class="heading5" id="i5.8.1.3.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.8.1.3.1" href="add_client_preferred_rates.htm" target="hmcontent"><span class="heading5" id="s5.8.1.3.1">Add Client Preferred Rates</span></a>
+</li>
+<li class="heading5" id="i5.8.1.3.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.8.1.3.2" href="remove_client_preferred_rates.htm" target="hmcontent"><span class="heading5" id="s5.8.1.3.2">Remove Client Preferred Rates</span></a>
+</li>
+<li class="heading5" id="i5.8.1.3.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.8.1.3.3" href="edit_client_preferred_rates.htm" target="hmcontent"><span class="heading5" id="s5.8.1.3.3">Edit Client Preferred Rates</span></a>
+</li>
+</ul>
+</li>
+<li class="heading4" id="i5.8.1.4" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onClick="return clicked(this,event)"><a class="heading4" id="a5.8.1.4" href="case_preferred_pricing.htm" target="hmcontent"><span class="heading4" id="s5.8.1.4" onDblClick="return dblclicked(this)">Case Preferred Pricing</span></a>
+<ul id="ul5.8.1.4" style="list-style-type:none">
+<li class="heading5" id="i5.8.1.4.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.8.1.4.1" href="add_case_preferred_rates.htm" target="hmcontent"><span class="heading5" id="s5.8.1.4.1">Add Case Preferred Rates</span></a>
+</li>
+<li class="heading5" id="i5.8.1.4.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.8.1.4.2" href="remove_case_preferred_rates.htm" target="hmcontent"><span class="heading5" id="s5.8.1.4.2">Remove Case Preferred Rates</span></a>
+</li>
+<li class="heading5" id="i5.8.1.4.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.8.1.4.3" href="edit_case_preferred_rates.htm" target="hmcontent"><span class="heading5" id="s5.8.1.4.3">Edit Case Preferred Rates</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i5.8.2" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onClick="return clicked(this,event)"><a class="heading3" id="a5.8.2" href="taxes.htm" target="hmcontent"><span class="heading3" id="s5.8.2" onDblClick="return dblclicked(this)">Taxes</span></a>
+<ul id="ul5.8.2" style="list-style-type:none">
+<li class="heading4" id="i5.8.2.1" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onClick="return clicked(this,event)"><a class="heading4" id="a5.8.2.1" href="tax_classes.htm" target="hmcontent"><span class="heading4" id="s5.8.2.1" onDblClick="return dblclicked(this)">Tax Classes</span></a>
+<ul id="ul5.8.2.1" style="list-style-type:none">
+<li class="heading5" id="i5.8.2.1.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.8.2.1.1" href="add_tax_class.htm" target="hmcontent"><span class="heading5" id="s5.8.2.1.1">Add Tax Class</span></a>
+</li>
+<li class="heading5" id="i5.8.2.1.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.8.2.1.2" href="remove_tax_class.htm" target="hmcontent"><span class="heading5" id="s5.8.2.1.2">Remove Tax Class</span></a>
+</li>
+<li class="heading5" id="i5.8.2.1.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.8.2.1.3" href="edit_tax_class.htm" target="hmcontent"><span class="heading5" id="s5.8.2.1.3">Edit Tax Class</span></a>
+</li>
+</ul>
+</li>
+<li class="heading4" id="i5.8.2.2" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onClick="return clicked(this,event)"><a class="heading4" id="a5.8.2.2" href="tax_codes.htm" target="hmcontent"><span class="heading4" id="s5.8.2.2" onDblClick="return dblclicked(this)">Tax Codes</span></a>
+<ul id="ul5.8.2.2" style="list-style-type:none">
+<li class="heading5" id="i5.8.2.2.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.8.2.2.1" href="add_tax_code.htm" target="hmcontent"><span class="heading5" id="s5.8.2.2.1">Add Tax Code</span></a>
+</li>
+<li class="heading5" id="i5.8.2.2.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.8.2.2.2" href="remove_tax_code.htm" target="hmcontent"><span class="heading5" id="s5.8.2.2.2">Remove Tax Code</span></a>
+</li>
+<li class="heading5" id="i5.8.2.2.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.8.2.2.3" href="edit_tax_code.htm" target="hmcontent"><span class="heading5" id="s5.8.2.2.3">Edit Tax Code</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i5.8.3" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onClick="return clicked(this,event)"><a class="heading3" id="a5.8.3" href="generate_invoices.htm" target="hmcontent"><span class="heading3" id="s5.8.3" onDblClick="return dblclicked(this)">Generate Invoices</span></a>
+<ul id="ul5.8.3" style="list-style-type:none">
+<li class="heading4" id="i5.8.3.1" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onClick="return clicked(this,event)"><a class="heading4" id="a5.8.3.1" href="review_invoices.htm" target="hmcontent"><span class="heading4" id="s5.8.3.1" onDblClick="return dblclicked(this)">Review Invoices</span></a>
+<ul id="ul5.8.3.1" style="list-style-type:none">
+<li class="heading5" id="i5.8.3.1.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.8.3.1.1" href="edit_previewed_invoice.htm" target="hmcontent"><span class="heading5" id="s5.8.3.1.1">Edit Review Invoices</span></a>
+</li>
+<li class="heading5" id="i5.8.3.1.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.8.3.1.2" href="discount_review_invoices.htm" target="hmcontent"><span class="heading5" id="s5.8.3.1.2">Discount Review Invoices</span></a>
+</li>
+<li class="heading5" id="i5.8.3.1.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.8.3.1.3" href="finalize_review_invoices.htm" target="hmcontent"><span class="heading5" id="s5.8.3.1.3">Finalize Review Invoices</span></a>
+</li>
+<li class="heading5" id="i5.8.3.1.4" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.8.3.1.4" href="save_review_invoices.htm" target="hmcontent"><span class="heading5" id="s5.8.3.1.4">Save Review Invoices</span></a>
+</li>
+</ul>
+</li>
+<li class="heading4" id="i5.8.3.2" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onClick="return clicked(this,event)"><a class="heading4" id="a5.8.3.2" href="saved_invoices.htm" target="hmcontent"><span class="heading4" id="s5.8.3.2" onDblClick="return dblclicked(this)">Saved Invoices</span></a>
+<ul id="ul5.8.3.2" style="list-style-type:none">
+<li class="heading5" id="i5.8.3.2.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.8.3.2.1" href="edit_saved_invoices.htm" target="hmcontent"><span class="heading5" id="s5.8.3.2.1">Edit Saved Invoices</span></a>
+</li>
+<li class="heading5" id="i5.8.3.2.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.8.3.2.2" href="delete_saved_invoices.htm" target="hmcontent"><span class="heading5" id="s5.8.3.2.2">Delete Saved Invoices</span></a>
+</li>
+<li class="heading5" id="i5.8.3.2.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.8.3.2.3" href="run_saved_invoices.htm" target="hmcontent"><span class="heading5" id="s5.8.3.2.3">Run Saved Invoices</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i5.8.4" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onClick="return clicked(this,event)"><a class="heading3" id="a5.8.4" href="finalize_invoices.htm" target="hmcontent"><span class="heading3" id="s5.8.4" onDblClick="return dblclicked(this)">Finalized Invoices</span></a>
+<ul id="ul5.8.4" style="list-style-type:none">
+<li class="heading4" id="i5.8.4.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading4" id="a5.8.4.1" href="delete_final_invoices.htm" target="hmcontent"><span class="heading4" id="s5.8.4.1">Delete Final Invoices</span></a>
+</li>
+<li class="heading4" id="i5.8.4.2" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onClick="return clicked(this,event)"><a class="heading4" id="a5.8.4.2" href="preview_final_invoice.htm" target="hmcontent"><span class="heading4" id="s5.8.4.2" onDblClick="return dblclicked(this)">Preview Final Invoice</span></a>
+<ul id="ul5.8.4.2" style="list-style-type:none">
+<li class="heading5" id="i5.8.4.2.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.8.4.2.1" href="edit_previewed_invoice.htm" target="hmcontent"><span class="heading5" id="s5.8.4.2.1">Edit Previewed Invoice</span></a>
+</li>
+<li class="heading5" id="i5.8.4.2.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.8.4.2.2" href="single_export_previewed_invoice.htm" target="hmcontent"><span class="heading5" id="s5.8.4.2.2">Single Export Previewed Invoice</span></a>
+</li>
+</ul>
+</li>
+<li class="heading4" id="i5.8.4.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading4" id="a5.8.4.3" href="bulk_export_final_invoices.htm" target="hmcontent"><span class="heading4" id="s5.8.4.3">Bulk Export Final Invoices</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i5.8.5" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading3" id="a5.8.5" href="statistics.htm" target="hmcontent"><span class="heading3" id="s5.8.5">Statistics</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i5.9" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onClick="return clicked(this,event)"><a class="heading2" id="a5.9" href="administration.htm" target="hmcontent"><span class="heading2" id="s5.9" onDblClick="return dblclicked(this)">Administration</span></a>
+<ul id="ul5.9" style="list-style-type:none">
+<li class="heading3" id="i5.9.1" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onClick="return clicked(this,event)"><a class="heading3" id="a5.9.1" href="system_management.htm" target="hmcontent"><span class="heading3" id="s5.9.1" onDblClick="return dblclicked(this)">System Management</span></a>
+<ul id="ul5.9.1" style="list-style-type:none">
+<li class="heading4" id="i5.9.1.1" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onClick="return clicked(this,event)"><a class="heading4" id="a5.9.1.1" href="manage_dropdowns.htm" target="hmcontent"><span class="heading4" id="s5.9.1.1" onDblClick="return dblclicked(this)">Manage Dropdowns</span></a>
+<ul id="ul5.9.1.1" style="list-style-type:none">
+<li class="heading5" id="i5.9.1.1.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.9.1.1.1" href="add_dropdown_item.htm" target="hmcontent"><span class="heading5" id="s5.9.1.1.1">Add Dropdown Item</span></a>
+</li>
+<li class="heading5" id="i5.9.1.1.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.9.1.1.2" href="remove_dropdown_item.htm" target="hmcontent"><span class="heading5" id="s5.9.1.1.2">Remove Dropdown Item</span></a>
+</li>
+<li class="heading5" id="i5.9.1.1.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.9.1.1.3" href="edit_dropdown_item.htm" target="hmcontent"><span class="heading5" id="s5.9.1.1.3">Edit Dropdown Item</span></a>
+</li>
+</ul>
+</li>
+<li class="heading4" id="i5.9.1.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading4" id="a5.9.1.2" href="email_alert_configuration.htm" target="hmcontent"><span class="heading4" id="s5.9.1.2">Email Alert Configuration</span></a>
+</li>
+<li class="heading4" id="i5.9.1.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading4" id="a5.9.1.3" href="rebrand_system.htm" target="hmcontent"><span class="heading4" id="s5.9.1.3">Rebrand System</span></a>
+</li>
+<li class="heading4" id="i5.9.1.4" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading4" id="a5.9.1.4" href="system_updates.htm" target="hmcontent"><span class="heading4" id="s5.9.1.4">System Updates</span></a>
+</li>
+<li class="heading4" id="i5.9.1.5" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading4" id="a5.9.1.5" href="project_sort_display.htm" target="hmcontent"><span class="heading4" id="s5.9.1.5">Project Sort Display</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i5.9.2" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onClick="return clicked(this,event)"><a class="heading3" id="a5.9.2" href="workflow_management.htm" target="hmcontent"><span class="heading3" id="s5.9.2" onDblClick="return dblclicked(this)">Workflow Management</span></a>
+<ul id="ul5.9.2" style="list-style-type:none">
+<li class="heading4" id="i5.9.2.1" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onClick="return clicked(this,event)"><a class="heading4" id="a5.9.2.1" href="case_manager_team.htm" target="hmcontent"><span class="heading4" id="s5.9.2.1" onDblClick="return dblclicked(this)">Case Manager Team</span></a>
+<ul id="ul5.9.2.1" style="list-style-type:none">
+<li class="heading5" id="i5.9.2.1.1" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.9.2.1.1" href="case_manager_team_services.htm" target="hmcontent"><span class="heading5" id="s5.9.2.1.1" onDblClick="return dblclicked(this)">Case Manager Team Services</span></a>
+<ul id="ul5.9.2.1.1" style="list-style-type:none">
+<li class="heading6" id="i5.9.2.1.1.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading6" id="a5.9.2.1.1.1" href="add_case_manager_team_services.htm" target="hmcontent"><span class="heading6" id="s5.9.2.1.1.1">Add Case Manager Team Services</span></a>
+</li>
+<li class="heading6" id="i5.9.2.1.1.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading6" id="a5.9.2.1.1.2" href="remove_case_manager_team_services.htm" target="hmcontent"><span class="heading6" id="s5.9.2.1.1.2">Remove Case Manager Team Services</span></a>
+</li>
+<li class="heading6" id="i5.9.2.1.1.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading6" id="a5.9.2.1.1.3" href="edit_case_manager_team_services.htm" target="hmcontent"><span class="heading6" id="s5.9.2.1.1.3">Edit Case Manager Team Services</span></a>
+</li>
+</ul>
+</li>
+<li class="heading5" id="i5.9.2.1.2" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.9.2.1.2" href="case_manager_team_service_tasks.htm" target="hmcontent"><span class="heading5" id="s5.9.2.1.2" onDblClick="return dblclicked(this)">Case Manager Team Service Tasks</span></a>
+<ul id="ul5.9.2.1.2" style="list-style-type:none">
+<li class="heading6" id="i5.9.2.1.2.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading6" id="a5.9.2.1.2.1" href="add_case_manager_team_service_tasks.htm" target="hmcontent"><span class="heading6" id="s5.9.2.1.2.1">Add Case Manager Team Service Tasks</span></a>
+</li>
+<li class="heading6" id="i5.9.2.1.2.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading6" id="a5.9.2.1.2.2" href="remove_case_manager_team_service_tasks.htm" target="hmcontent"><span class="heading6" id="s5.9.2.1.2.2">Remove Case Manager Team Service Tasks</span></a>
+</li>
+<li class="heading6" id="i5.9.2.1.2.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading6" id="a5.9.2.1.2.3" href="edit_case_manager_team_service_tasks.htm" target="hmcontent"><span class="heading6" id="s5.9.2.1.2.3">Edit Case Manager Team Service Tasks</span></a>
+</li>
+<li class="heading6" id="i5.9.2.1.2.4" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onClick="return clicked(this,event)"><a class="heading6" id="a5.9.2.1.2.4" href="case_manager_team_service_task_forms.htm" target="hmcontent"><span class="heading6" id="s5.9.2.1.2.4" onDblClick="return dblclicked(this)">Case Manager Team Service Task Forms</span></a>
+<ul id="ul5.9.2.1.2.4" style="list-style-type:none">
+<li class="heading6" id="i5.9.2.1.2.4.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading6" id="a5.9.2.1.2.4.1" href="add_form_case_manager_team_service_tasks.htm" target="hmcontent"><span class="heading6" id="s5.9.2.1.2.4.1">Add Form to Case Manager Team Service Tasks</span></a>
+</li>
+<li class="heading6" id="i5.9.2.1.2.4.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading6" id="a5.9.2.1.2.4.2" href="edit_form_case_manager_team_service_tasks.htm" target="hmcontent"><span class="heading6" id="s5.9.2.1.2.4.2">Edit Form to Case Manager Team Service Tasks</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading5" id="i5.9.2.1.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.9.2.1.3" href="case_manager_team_assigned_users.htm" target="hmcontent"><span class="heading5" id="s5.9.2.1.3">Case Manager Team Assigned Users</span></a>
+</li>
+</ul>
+</li>
+<li class="heading4" id="i5.9.2.2" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onClick="return clicked(this,event)"><a class="heading4" id="a5.9.2.2" href="operation_team.htm" target="hmcontent"><span class="heading4" id="s5.9.2.2" onDblClick="return dblclicked(this)">Operation Team</span></a>
+<ul id="ul5.9.2.2" style="list-style-type:none">
+<li class="heading5" id="i5.9.2.2.1" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.9.2.2.1" href="operation_teams.htm" target="hmcontent"><span class="heading5" id="s5.9.2.2.1" onDblClick="return dblclicked(this)">Operation Teams</span></a>
+<ul id="ul5.9.2.2.1" style="list-style-type:none">
+<li class="heading6" id="i5.9.2.2.1.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading6" id="a5.9.2.2.1.1" href="add_operation_team.htm" target="hmcontent"><span class="heading6" id="s5.9.2.2.1.1">Add Operation Team</span></a>
+</li>
+<li class="heading6" id="i5.9.2.2.1.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading6" id="a5.9.2.2.1.2" href="remove_operation_team.htm" target="hmcontent"><span class="heading6" id="s5.9.2.2.1.2">Remove Operation Team</span></a>
+</li>
+<li class="heading6" id="i5.9.2.2.1.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading6" id="a5.9.2.2.1.3" href="edit_operation_team.htm" target="hmcontent"><span class="heading6" id="s5.9.2.2.1.3">Edit Operation Team</span></a>
+</li>
+</ul>
+</li>
+<li class="heading5" id="i5.9.2.2.2" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.9.2.2.2" href="operation_team_services.htm" target="hmcontent"><span class="heading5" id="s5.9.2.2.2" onDblClick="return dblclicked(this)">Operation Team Services</span></a>
+<ul id="ul5.9.2.2.2" style="list-style-type:none">
+<li class="heading6" id="i5.9.2.2.2.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading6" id="a5.9.2.2.2.1" href="add_operation_team_services.htm" target="hmcontent"><span class="heading6" id="s5.9.2.2.2.1">Add Operation Team Services</span></a>
+</li>
+<li class="heading6" id="i5.9.2.2.2.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading6" id="a5.9.2.2.2.2" href="remove_operation_team_services.htm" target="hmcontent"><span class="heading6" id="s5.9.2.2.2.2">Remove Operation Team Services</span></a>
+</li>
+<li class="heading6" id="i5.9.2.2.2.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading6" id="a5.9.2.2.2.3" href="edit_operation_team_services.htm" target="hmcontent"><span class="heading6" id="s5.9.2.2.2.3">Edit Operation Team Services</span></a>
+</li>
+</ul>
+</li>
+<li class="heading5" id="i5.9.2.2.3" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.9.2.2.3" href="operation_team_service_tasks.htm" target="hmcontent"><span class="heading5" id="s5.9.2.2.3" onDblClick="return dblclicked(this)">Operation Team Service Tasks</span></a>
+<ul id="ul5.9.2.2.3" style="list-style-type:none">
+<li class="heading6" id="i5.9.2.2.3.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading6" id="a5.9.2.2.3.1" href="add_operation_team_service_tasks.htm" target="hmcontent"><span class="heading6" id="s5.9.2.2.3.1">Add Operation Team Service Tasks</span></a>
+</li>
+<li class="heading6" id="i5.9.2.2.3.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading6" id="a5.9.2.2.3.2" href="remove_operation_team_service_tasks.htm" target="hmcontent"><span class="heading6" id="s5.9.2.2.3.2">Remove Operation Team Service Tasks</span></a>
+</li>
+<li class="heading6" id="i5.9.2.2.3.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading6" id="a5.9.2.2.3.3" href="edit_operation_team_service_tasks.htm" target="hmcontent"><span class="heading6" id="s5.9.2.2.3.3">Edit Operation Team Service Tasks</span></a>
+</li>
+<li class="heading6" id="i5.9.2.2.3.4" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onClick="return clicked(this,event)"><a class="heading6" id="a5.9.2.2.3.4" href="operation_team_service_task_forms.htm" target="hmcontent"><span class="heading6" id="s5.9.2.2.3.4" onDblClick="return dblclicked(this)">Operation Team Service Task Forms</span></a>
+<ul id="ul5.9.2.2.3.4" style="list-style-type:none">
+<li class="heading6" id="i5.9.2.2.3.4.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading6" id="a5.9.2.2.3.4.1" href="add_form_operation_team_service_tasks.htm" target="hmcontent"><span class="heading6" id="s5.9.2.2.3.4.1">Add Form Operation Team Service Tasks</span></a>
+</li>
+<li class="heading6" id="i5.9.2.2.3.4.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading6" id="a5.9.2.2.3.4.2" href="edit_form_operation_team_service_tasks.htm" target="hmcontent"><span class="heading6" id="s5.9.2.2.3.4.2">Edit Form Operation Team Service Tasks</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading5" id="i5.9.2.2.4" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.9.2.2.4" href="operation_team_assigned_users.htm" target="hmcontent"><span class="heading5" id="s5.9.2.2.4">Operation Team Assigned Users</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i5.9.3" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onClick="return clicked(this,event)"><a class="heading3" id="a5.9.3" href="client_management.htm" target="hmcontent"><span class="heading3" id="s5.9.3" onDblClick="return dblclicked(this)">Client Management</span></a>
+<ul id="ul5.9.3" style="list-style-type:none">
+<li class="heading4" id="i5.9.3.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading4" id="a5.9.3.1" href="add_client.htm" target="hmcontent"><span class="heading4" id="s5.9.3.1">Add Client</span></a>
+</li>
+<li class="heading4" id="i5.9.3.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading4" id="a5.9.3.2" href="remove_client.htm" target="hmcontent"><span class="heading4" id="s5.9.3.2">Remove Client</span></a>
+</li>
+<li class="heading4" id="i5.9.3.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading4" id="a5.9.3.3" href="edit_client.htm" target="hmcontent"><span class="heading4" id="s5.9.3.3">Edit Client</span></a>
+</li>
+<li class="heading4" id="i5.9.3.4" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onClick="return clicked(this,event)"><a class="heading4" id="a5.9.3.4" href="client_contacts.htm" target="hmcontent"><span class="heading4" id="s5.9.3.4" onDblClick="return dblclicked(this)">Client Contacts</span></a>
+<ul id="ul5.9.3.4" style="list-style-type:none">
+<li class="heading5" id="i5.9.3.4.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.9.3.4.1" href="add_client_contacts.htm" target="hmcontent"><span class="heading5" id="s5.9.3.4.1">Add Client Contacts</span></a>
+</li>
+<li class="heading5" id="i5.9.3.4.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.9.3.4.2" href="remove_client_contacts.htm" target="hmcontent"><span class="heading5" id="s5.9.3.4.2">Remove Client Contacts</span></a>
+</li>
+<li class="heading5" id="i5.9.3.4.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.9.3.4.3" href="edit_client_contacts.htm" target="hmcontent"><span class="heading5" id="s5.9.3.4.3">Edit Client Contacts</span></a>
+</li>
+</ul>
+</li>
+<li class="heading4" id="i5.9.3.5" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading4" id="a5.9.3.5" href="client_assigned_users.htm" target="hmcontent"><span class="heading4" id="s5.9.3.5">Client Assigned Users</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i5.9.4" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onClick="return clicked(this,event)"><a class="heading3" id="a5.9.4" href="case_management.htm" target="hmcontent"><span class="heading3" id="s5.9.4" onDblClick="return dblclicked(this)">Case Management</span></a>
+<ul id="ul5.9.4" style="list-style-type:none">
+<li class="heading4" id="i5.9.4.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading4" id="a5.9.4.1" href="add_case.htm" target="hmcontent"><span class="heading4" id="s5.9.4.1">Add Case</span></a>
+</li>
+<li class="heading4" id="i5.9.4.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading4" id="a5.9.4.2" href="remove_case.htm" target="hmcontent"><span class="heading4" id="s5.9.4.2">Remove Case</span></a>
+</li>
+<li class="heading4" id="i5.9.4.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading4" id="a5.9.4.3" href="edit_case.htm" target="hmcontent"><span class="heading4" id="s5.9.4.3">Edit Case</span></a>
+</li>
+<li class="heading4" id="i5.9.4.4" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onClick="return clicked(this,event)"><a class="heading4" id="a5.9.4.4" href="case_contacts.htm" target="hmcontent"><span class="heading4" id="s5.9.4.4" onDblClick="return dblclicked(this)">Case Contacts</span></a>
+<ul id="ul5.9.4.4" style="list-style-type:none">
+<li class="heading5" id="i5.9.4.4.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.9.4.4.1" href="add_case_contacts.htm" target="hmcontent"><span class="heading5" id="s5.9.4.4.1">Add Case Contacts</span></a>
+</li>
+<li class="heading5" id="i5.9.4.4.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.9.4.4.2" href="remove_case_contacts.htm" target="hmcontent"><span class="heading5" id="s5.9.4.4.2">Remove Case Contacts</span></a>
+</li>
+</ul>
+</li>
+<li class="heading4" id="i5.9.4.5" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading4" id="a5.9.4.5" href="exclude_team_services.htm" target="hmcontent"><span class="heading4" id="s5.9.4.5">Exclude Team Services</span></a>
+</li>
+<li class="heading4" id="i5.9.4.6" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading4" id="a5.9.4.6" href="case_assigned_users.htm" target="hmcontent"><span class="heading4" id="s5.9.4.6">Case Assigned Users</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i5.9.5" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onClick="return clicked(this,event)"><a class="heading3" id="a5.9.5" href="user_management.htm" target="hmcontent"><span class="heading3" id="s5.9.5" onDblClick="return dblclicked(this)">User Management</span></a>
+<ul id="ul5.9.5" style="list-style-type:none">
+<li class="heading4" id="i5.9.5.1" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onClick="return clicked(this,event)"><a class="heading4" id="a5.9.5.1" href="manage_roles.htm" target="hmcontent"><span class="heading4" id="s5.9.5.1" onDblClick="return dblclicked(this)">Manage Roles</span></a>
+<ul id="ul5.9.5.1" style="list-style-type:none">
+<li class="heading5" id="i5.9.5.1.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.9.5.1.1" href="add_roles.htm" target="hmcontent"><span class="heading5" id="s5.9.5.1.1">Add Roles</span></a>
+</li>
+<li class="heading5" id="i5.9.5.1.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.9.5.1.2" href="remove_roles.htm" target="hmcontent"><span class="heading5" id="s5.9.5.1.2">Remove Roles</span></a>
+</li>
+<li class="heading5" id="i5.9.5.1.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.9.5.1.3" href="edit_roles.htm" target="hmcontent"><span class="heading5" id="s5.9.5.1.3">Edit Roles</span></a>
+</li>
+</ul>
+</li>
+<li class="heading4" id="i5.9.5.2" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onClick="return clicked(this,event)"><a class="heading4" id="a5.9.5.2" href="manage_users.htm" target="hmcontent"><span class="heading4" id="s5.9.5.2" onDblClick="return dblclicked(this)">Manage Users</span></a>
+<ul id="ul5.9.5.2" style="list-style-type:none">
+<li class="heading5" id="i5.9.5.2.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.9.5.2.1" href="add_users.htm" target="hmcontent"><span class="heading5" id="s5.9.5.2.1">Add Users</span></a>
+</li>
+<li class="heading5" id="i5.9.5.2.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.9.5.2.2" href="remove_users.htm" target="hmcontent"><span class="heading5" id="s5.9.5.2.2">Remove Users</span></a>
+</li>
+<li class="heading5" id="i5.9.5.2.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.9.5.2.3" href="edit_users.htm" target="hmcontent"><span class="heading5" id="s5.9.5.2.3">Edit Users</span></a>
+</li>
+<li class="heading5" id="i5.9.5.2.4" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onClick="return clicked(this,event)"><a class="heading5" id="a5.9.5.2.4" href="user_security.htm" target="hmcontent"><span class="heading5" id="s5.9.5.2.4">User Security</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<script type="text/javascript">loadicons('cicon9.gif','cicon2.gif','cicon1.gif');</script>
+
+
+</body>
+</html>

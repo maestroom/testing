@@ -1,0 +1,2 @@
+<?php if(!empty($filter_data) && $flag=='table_list'){ ?><?php foreach($filter_data as $key => $data){ ?><input type="hidden" value='<?= json_encode($data); ?>' class="table_lists" name="table_lists[<?=$key?>]"><?php } ?><?php } ?>
+<?php if(!empty($filter_data) && $flag=='table'){ ?><?php foreach($filter_data as $key => $data){ ?><input type="hidden" name="tbl_name[]" class="tbl_name" value="<?= $key ?>"/><?php } ?><?php } ?>

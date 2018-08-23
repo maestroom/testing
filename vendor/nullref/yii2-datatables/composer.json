@@ -1,0 +1,42 @@
+{
+    "name": "nullref/yii2-datatables",
+    "description": "Yii2 Extension for DataTables jQuery plug-in",
+    "type": "yii2-extension",
+    "homepage": "https://github.com/NullRefExcep/yii2-datatables",
+    "keywords": [
+        "yii2",
+        "yii",
+        "widget",
+        "jquery",
+        "datatable",
+        "datatables",
+        "plugin",
+        "jQuery"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Serhiy Vinichuk",
+            "email": "serhiyvinichuk@gmail.com"
+        },
+        {
+            "name": "Dmytro Karpovych",
+            "email": "ZAYEC77@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=5.4.0",
+        "yiisoft/yii2": "~2.0",
+        "bower-asset/datatables": "~1.10",
+        "bower-asset/datatables-plugins": "~1.0"
+    },
+    "autoload": {
+        "psr-4": {"nullref\\datatable\\": "src/"}
+    },
+    "extra": {
+        "asset-installer-paths": {
+            "bower-asset-library": "vendor/bower"
+        }
+    }
+}

@@ -1,0 +1,432 @@
+
+/*
+ *  File:         demo_table_jui.css
+ *  CVS:          $Id$
+ *  Description:  CSS descriptions for DataTables demo pages
+ *  Author:       Allan Jardine
+ *  Created:      Tue May 12 06:47:22 BST 2009
+ *  Modified:     $Date$ by $Author$
+ *  Language:     CSS
+ *  Project:      DataTables
+ *
+ *  Copyright 2009 Allan Jardine. All Rights Reserved.
+ *
+ * ***************************************************************************
+ * DESCRIPTION
+ 
+ */
+
+/* This one is not working - underline. and not workign on hover */
+
+.dataTables_wrapper .ui-toolbar { padding: 5px; }
+
+.dataTables_paginate {
+	min-width:250px;
+	width: auto;
+	text-align:right;
+}
+
+.dataTables_info { line-height:22px; padding:5px; font-size:13px;}
+
+table.display th { font-size:14px;}
+table.display td { font-size:13px;}
+
+ table.display td .secondary_button { font-size:.875em;}
+
+.table-tbody-scroll table.display thead { display:block;}
+.table-tbody-scroll table.display tbody { display:block; max-height:460px; overflow-y:auto; position:inherit;}
+
+.ui-dialog .optionvalueHtml { float:left; margin-top:10px; width:100%;}
+.ui-dialog .optionvalueHtml .table-tbody-scroll { border:1px solid #e9e7e8; float:left; width:100%;}
+.ui-dialog .optionvalueHtml .table-tbody-scroll table.display tbody { max-height:160px;}
+
+table.display thead { display:block; background:#e9e7e8;}
+table.display thead > tr { display:table; width:100%;}
+table.display tbody { bottom:113px; display:block; left:0px; overflow-y:auto; position:absolute; right:0px; top:45px;}
+table.display tbody > tr { display:table; width:100%;}
+
+table.display thead th {
+	padding:10px 15px;
+	cursor: pointer;
+	background-color:#e9e7e8;
+	line-height:1em;
+	text-align:left; vertical-align:middle;
+	color:#333;
+	line-height:14px;
+	font-weight:normal;
+}
+
+table.display thead th a { color:#333; }
+
+div.dataTables_wrapper .ui-widget-header { font-weight: normal; }
+
+/*
+ * Sort arrow icon positioning
+ */
+
+table.display thead th div.DataTables_sort_wrapper {
+	position: relative;
+	padding-right: 20px;
+}
+
+table.display thead th div.DataTables_sort_wrapper span {
+	position: absolute;
+	top: 50%;
+	margin-top: -8px;
+	right: 0;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ *
+ * Everything below this line is the same as demo_table.css. This file is
+ * required for 'cleanliness' of the markup
+ *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * DataTables features
+ */
+
+/* .table-responsive {
+  bottom: 56px;
+  height: auto;
+  left: 0;
+  min-height: inherit;
+  position: absolute;
+  right: 0;
+  top: 0;
+} */
+
+ .headerSortIcon {
+	margin-left: 5px;
+	vertical-align:middle;
+}
+
+.dataTables_wrapper {
+	/* background:#e9e7e8; */
+	/* -moz-border-radius: 5px 5px 0 0;
+	-webkit-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0; */
+	position: relative;
+	clear: both;
+	height:100%;
+}
+
+
+/* .administration-main-cols .administration-rt-cols .kv-grid-container .kv-grid-table tbody {
+  bottom:0px;
+  display: block;
+  left: 0;
+  overflow-y: auto;
+  position: absolute;
+  right: 0;
+  top:92px;
+}
+.administration-main-cols .administration-rt-cols .kv-grid-container .kv-grid-table tbody tr { display:table; width:100%;} */
+
+
+.grid-view > div.pagination-main { background:#FFF; border-top:5px solid #e9e7e8; bottom:56px; left:0px; padding:10px; position:absolute; right:0px;}
+.grid-view > div.clear { display:none;}
+
+
+.rc-handle-container { left:0px; position:absolute; right:0px; top:0px; width:100% !important;}
+
+.dataTables_processing {
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	width: 250px;
+	margin-left: -125px;
+	border: 1px solid #ddd;
+	text-align: center;
+	color: #999;
+	font-size: 11px;
+	padding: 2px 0;
+}
+
+.DTTT_container {
+	float: right;
+	margin-top: 20px;
+	padding: 10px;
+}
+
+.DTTT_order {
+	width: 100%;
+	text-align: right;
+}
+
+.DTTT_button {
+	font-family:  Arial, Open Sans, Helvetica, sans-serif;
+	font-weight: 400;
+	font-size: 1em;
+	
+	padding: 6px 20px;
+	margin-left:15px;
+	background-color: #FFF;
+	color: #000;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px solid #000000;
+	
+}
+
+.DTTT_button:hover, .DTTT_button:focus {
+	
+}
+
+button.delete span.icon-bin {
+	color: #000;
+}
+
+.dataTables_length {
+	min-width: 5.5em;
+	padding: 10px;
+	float: left;
+}
+
+.dataTables_length select { min-width:5em; }
+
+.dataTables_filter {
+	min-width: 5.5em;
+	padding: 10px;
+	float: left;
+	text-align: left;
+}
+
+.dataTables_filter input[type=text] { min-width:5em; }
+
+.dataTables_info {
+	float: left;
+	/* text-align: right; */
+	/* width: 48%; */
+}
+
+.dataTables_paginate {
+	float: right;
+	text-align: left;
+}
+
+/* Pagination nested */
+
+.paginate_disabled_previous, .paginate_enabled_previous, .paginate_disabled_next, .paginate_enabled_next {
+	height: 19px;
+	width: auto;
+	margin-left: 3px;
+	float: left;
+}
+
+
+/* HH: These images don't exist at the moment and are not used, commenting these out to void 404's*/
+
+/*
+.paginate_disabled_previous {
+
+    background-image: url('../images/back_disabled.jpg');
+
+}
+
+.paginate_enabled_previous {
+
+    background-image: url('../images/back_enabled.jpg');
+
+}
+
+.paginate_disabled_next {
+
+    background-image: url('../images/forward_disabled.jpg');
+
+}
+
+.paginate_enabled_next {
+
+    background-image: url('../images/forward_enabled.jpg');
+
+}
+*/
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * DataTables display
+ */
+
+table.display {
+	margin: 0 auto;
+	width: 100%;
+	clear: both;
+	border:none;
+	/* Fix NVDA issue (NVDA does not announce table headers properly when borde-collapse is set to collapse) */
+	border-collapse: separate;
+	padding:0;
+}
+
+table.display tfoot th {
+	padding: 3px 0px;
+	font-weight: bold;
+	font-weight: normal;
+}
+
+table.display tr.heading2 td { border-bottom: 1px solid #fff; }
+
+table.display td {
+	padding:7px;
+	vertical-align:middle;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+
+table.display td .icon-set { width:20px; height:20px; display:inline-block;}
+table.display td .icon-set .fa { margin:0px 5px; font-size:17px;}
+table.display td .icon-set .fa.fa-pencil { font-size:14px;}
+
+table.display td .removeOptionText .fa { margin:0px 5px; font-size:17px;}
+table.display td .removeOptionText:focus .fa { outline:2px solid #333; background:none;}
+
+table.display-check-radio td { padding:4px 15px;}
+
+table.display td.details, table.display td table.layoutTables td {
+	padding:0;
+	font-size:1em;
+}
+
+table.display td.center { text-align: center; }
+
+table.display td input.expandRowBtn { border:solid 2px #333; border-radius:2px;}
+table.display td input.expandRowBtn:focus { border:solid 2px #c52d2e; outline:0px none;}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * DataTables sorting
+ */
+
+/* Commenting out because these are replaced with background images */
+
+/*
+.sorting_asc {
+
+    background: url('../images/sort_asc.png') no-repeat center right;
+
+}
+
+.sorting_desc {
+
+    background: url('../images/sort_desc.png') no-repeat center right;
+
+}
+
+.sorting {
+
+    background: url('../images/sort_both.png') no-repeat center right;
+
+}
+
+
+.sorting_asc_disabled { background: url('../images/sort_asc_disabled.png') no-repeat center right; }
+
+.sorting_desc_disabled { background: url('../images/sort_desc_disabled.png') no-repeat center right; }
+*/
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * DataTables row classes
+ */
+
+tr.odd {
+	background-color: #F7F7F7;
+	min-height:35px;
+}
+
+tr.even {
+	background-color:#FFF;
+	min-height:35px;
+}
+
+tr.row_selected { background-color:#F7F7F7;}
+tr.row_selected span.icon-bin{ color: #fff;}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * Misc
+ */
+
+.dataTables_scroll { clear: both; }
+
+.top, .bottom {
+	padding: 15px;
+	background-color: #F5F5F5;
+	border: 1px solid #CCCCCC;
+}
+
+.top .dataTables_info { float: none; }
+
+.clear { clear: both; }
+
+.dataTables_empty { text-align: center; }
+
+tfoot input {
+	margin: 0.5em 0;
+	width: 100%;
+	color: #444;
+}
+
+tfoot input.search_init { color: #999; }
+
+td.group {
+	background-color: #d1cfd0;
+	border-bottom: 2px solid #A19B9E;
+	border-top: 2px solid #A19B9E;
+}
+
+td.details { background-color: #fff; }
+
+.paging_full_numbers a.paginate_button, .paging_full_numbers a.paginate_active { cursor:pointer; font-size:12px; font-weight:bold; margin:0px 1px; padding:5px 10px;}
+
+.paging_full_numbers a.paginate_button { background:#333; border:2px solid #333; border-radius:2px; color:#e9e7e8; float:left;}
+.paging_full_numbers a.paginate_active { background:#c52d2e; border:solid 2px #c52d2e; text-decoration:none;}
+.paging_full_numbers a.paginate_button:hover { background:#c52d2e; border:solid 2px #c52d2e; text-decoration:none;}
+.paging_full_numbers a.paginate_button:focus { background:#c52d2e; border:solid 2px #c52d2e; text-decoration:none; outline-offset:0; outline:0 none;}
+
+.paging_full_numbers a.paginate_button_text {
+	font-size: 1em;
+	color:#095395;
+	border:none;
+}
+
+.paging_full_numbers a.paginate_active { background-color: #207b9e; }
+
+table.display tr.row_selected {
+	background-color: #073347;
+	color:#fff;
+}
+
+/*
+ * Sorting classes for columns
+ */
+
+/* For the standard odd/even */
+
+td.sorting_1 { background-color: rgba(213, 236, 250, .3); }
+
+tr.odd td.sorting_2 { background-color: #DADCFF; }
+
+tr.odd td.sorting_3 { background-color: #E0E2FF; }
+
+td.sorting_1 { background-color: rgba(213, 236, 250, .3); }
+
+tr.even td.sorting_2 { background-color: #F2F3FF; }
+
+tr.even td.sorting_3 { background-color: #F9F9FF; }
+
+/*
+ * Row highlighting example
+ */
+
+.ex_highlight tbody tr.even:hover, tbody tr.even td.highlighted { background-color: #ECFFB3; }
+
+.ex_highlight tbody tr.odd:hover, tbody tr.odd td.highlighted { background-color: #E6FF99; }
+
+/* Unique Cell styles */
+
+.actionsTableCell {border-left: 4px solid #fff;
+
+}

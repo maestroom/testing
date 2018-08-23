@@ -1,0 +1,5 @@
+.sortable-widget-handler {
+    cursor: grab;
+    cursor: -webkit-grab;
+    cursor: -moz-grab;
+}

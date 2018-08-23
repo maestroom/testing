@@ -1,0 +1,1 @@
+<?php echo !empty($data)?json_encode($data):0; ?>

@@ -1,0 +1,457 @@
+﻿AChecker - Web Accessibility Checker,version 1.4,AChecker is an open source Web accessibility evaluation tool. It can be used to review the accessibility of Web pages based on a variety international accessibility guidelines.
+http://www.atutor.ca/achecker/
+
+2016.08.25 07:25:24
+
+Source Title,My Assignments
+
+WCAG2-AA,Web Content Accessibility Guidelines (WCAG), Version 2.0, Level AA
+
+Known Problems: 6
+Repair,Problem,CSS Code,Image Source
+Line 1, Column 1: Document has invalid language code.
+"Repair: Add a valid 2 letter or 3 letter language code as defined in the ISO 639 specification to the HTML 'lang' attribute. For XHTML, both 'lang' and 'xml:lang' must be set.","<html lang=""en-US""><head>
+    <meta charset=""UTF-8"">
+    <meta name=""viewport"" content=""width=devi ...",,,
+Line 69, Column 79: i (italic) element used.
+Repair: Replace your i elements with em or strong.,"<i class=""fa fa-cogs""></i>",,,
+Line 70, Column 114: i (italic) element used.
+Repair: Replace your i elements with em or strong.,"<i class=""fa fa-calendar""></i>",,,
+Line 71, Column 60: i (italic) element used.
+Repair: Replace your i elements with em or strong.,"<i class=""fa fa-question-circle""></i>",,,
+Line 72, Column 95: i (italic) element used.
+Repair: Replace your i elements with em or strong.,"<i class=""fa fa-sign-out""></i>",,,
+Line 98, Column 4: i (italic) element used.
+Repair: Replace your i elements with em or strong.,"<i class=""fa fa-mouse-pointer""></i>",,,
+
+Likely Problems: 0
+Congratulations! No likely problems.
+Problem,CSS Code,Image Source,Decision
+
+Potential Problems: 178
+Problem,CSS Code,Image Source,Decision
+Line 6, Column 5: title might not describe the document.
+<title>My Assignments</title>,,,Failed
+Line 18, Column 1: script user interface may not be accessible.
+"<script src=""/ISATASKV2/assets/af1ea47c/jquery.js""></script>",,,Failed
+Line 18, Column 1: script may use color alone.
+"<script src=""/ISATASKV2/assets/af1ea47c/jquery.js""></script>",,,Failed
+Line 18, Column 1: script may cause screen flicker.
+"<script src=""/ISATASKV2/assets/af1ea47c/jquery.js""></script>",,,Failed
+Line 19, Column 1: script user interface may not be accessible.
+"<script src=""/ISATASKV2/assets/8fc84160/yii.js""></script>",,,Failed
+Line 19, Column 1: script may use color alone.
+"<script src=""/ISATASKV2/assets/8fc84160/yii.js""></script>",,,Failed
+Line 19, Column 1: script may cause screen flicker.
+"<script src=""/ISATASKV2/assets/8fc84160/yii.js""></script>",,,Failed
+Line 20, Column 1: script user interface may not be accessible.
+"<script src=""/ISATASKV2/js/jquery-ui.js""></script>",,,Failed
+Line 20, Column 1: script may use color alone.
+"<script src=""/ISATASKV2/js/jquery-ui.js""></script>",,,Failed
+Line 20, Column 1: script may cause screen flicker.
+"<script src=""/ISATASKV2/js/jquery-ui.js""></script>",,,Failed
+Line 21, Column 1: script user interface may not be accessible.
+"<script src=""/ISATASKV2/js/bootstrap.js""></script>",,,Failed
+Line 21, Column 1: script may use color alone.
+"<script src=""/ISATASKV2/js/bootstrap.js""></script>",,,Failed
+Line 21, Column 1: script may cause screen flicker.
+"<script src=""/ISATASKV2/js/bootstrap.js""></script>",,,Failed
+Line 22, Column 1: script user interface may not be accessible.
+"<script src=""/ISATASKV2/js/jquery.validate.min.js""></script>",,,Failed
+Line 22, Column 1: script may use color alone.
+"<script src=""/ISATASKV2/js/jquery.validate.min.js""></script>",,,Failed
+Line 22, Column 1: script may cause screen flicker.
+"<script src=""/ISATASKV2/js/jquery.validate.min.js""></script>",,,Failed
+Line 23, Column 1: script user interface may not be accessible.
+"<script src=""/ISATASKV2/js/jQuery.customInput.js""></script>",,,Failed
+Line 23, Column 1: script may use color alone.
+"<script src=""/ISATASKV2/js/jQuery.customInput.js""></script>",,,Failed
+Line 23, Column 1: script may cause screen flicker.
+"<script src=""/ISATASKV2/js/jQuery.customInput.js""></script>",,,Failed
+Line 24, Column 1: script user interface may not be accessible.
+"<script src=""/ISATASKV2/js/common.js""></script>",,,Failed
+Line 24, Column 1: script may use color alone.
+"<script src=""/ISATASKV2/js/common.js""></script>",,,Failed
+Line 24, Column 1: script may cause screen flicker.
+"<script src=""/ISATASKV2/js/common.js""></script>",,,Failed
+Line 25, Column 1: script user interface may not be accessible.
+"<script src=""/ISATASKV2/js/administration.js""></script>",,,Failed
+Line 25, Column 1: script may use color alone.
+"<script src=""/ISATASKV2/js/administration.js""></script>",,,Failed
+Line 25, Column 1: script may cause screen flicker.
+"<script src=""/ISATASKV2/js/administration.js""></script>",,,Failed
+Line 26, Column 1: script user interface may not be accessible.
+"<script src=""/ISATASKV2/js/client.js""></script>",,,Failed
+Line 26, Column 1: script may use color alone.
+"<script src=""/ISATASKV2/js/client.js""></script>",,,Failed
+Line 26, Column 1: script may cause screen flicker.
+"<script src=""/ISATASKV2/js/client.js""></script>",,,Failed
+Line 27, Column 1: script user interface may not be accessible.
+"<script src=""/ISATASKV2/js/case.js""></script>",,,Failed
+Line 27, Column 1: script may use color alone.
+"<script src=""/ISATASKV2/js/case.js""></script>",,,Failed
+Line 27, Column 1: script may cause screen flicker.
+"<script src=""/ISATASKV2/js/case.js""></script>",,,Failed
+Line 28, Column 1: script user interface may not be accessible.
+"<script src=""/ISATASKV2/js/users.js""></script>",,,Failed
+Line 28, Column 1: script may use color alone.
+"<script src=""/ISATASKV2/js/users.js""></script>",,,Failed
+Line 28, Column 1: script may cause screen flicker.
+"<script src=""/ISATASKV2/js/users.js""></script>",,,Failed
+Line 29, Column 1: script user interface may not be accessible.
+"<script src=""/ISATASKV2/js/bootstrap-filestyle.js""></script>",,,Failed
+Line 29, Column 1: script may use color alone.
+"<script src=""/ISATASKV2/js/bootstrap-filestyle.js""></script>",,,Failed
+Line 29, Column 1: script may cause screen flicker.
+"<script src=""/ISATASKV2/js/bootstrap-filestyle.js""></script>",,,Failed
+Line 30, Column 1: script user interface may not be accessible.
+"<script src=""/ISATASKV2/js/datepicker.js""></script>",,,Failed
+Line 30, Column 1: script may use color alone.
+"<script src=""/ISATASKV2/js/datepicker.js""></script>",,,Failed
+Line 30, Column 1: script may cause screen flicker.
+"<script src=""/ISATASKV2/js/datepicker.js""></script>",,,Failed
+Line 31, Column 1: script user interface may not be accessible.
+"<script src=""/ISATASKV2/js/jquery.slidereveal.min.js""></script>",,,Failed
+Line 31, Column 1: script may use color alone.
+"<script src=""/ISATASKV2/js/jquery.slidereveal.min.js""></script>",,,Failed
+Line 31, Column 1: script may cause screen flicker.
+"<script src=""/ISATASKV2/js/jquery.slidereveal.min.js""></script>",,,Failed
+Line 32, Column 1: script user interface may not be accessible.
+"<script src=""/ISATASKV2/js/media.js""></script>",,,Failed
+Line 32, Column 1: script may use color alone.
+"<script src=""/ISATASKV2/js/media.js""></script>",,,Failed
+Line 32, Column 1: script may cause screen flicker.
+"<script src=""/ISATASKV2/js/media.js""></script>",,,Failed
+Line 33, Column 1: script user interface may not be accessible.
+"<script src=""/ISATASKV2/js/jquery.form.min.js""></script>",,,Failed
+Line 33, Column 1: script may use color alone.
+"<script src=""/ISATASKV2/js/jquery.form.min.js""></script>",,,Failed
+Line 33, Column 1: script may cause screen flicker.
+"<script src=""/ISATASKV2/js/jquery.form.min.js""></script>",,,Failed
+Line 34, Column 1: script user interface may not be accessible.
+"<script src=""/ISATASKV2/js/caseproduction.js""></script>",,,Failed
+Line 34, Column 1: script may use color alone.
+"<script src=""/ISATASKV2/js/caseproduction.js""></script>",,,Failed
+Line 34, Column 1: script may cause screen flicker.
+"<script src=""/ISATASKV2/js/caseproduction.js""></script>",,,Failed
+Line 35, Column 1: script user interface may not be accessible.
+"<script src=""/ISATASKV2/js/reportmanagment.js""></script>",,,Failed
+Line 35, Column 1: script may use color alone.
+"<script src=""/ISATASKV2/js/reportmanagment.js""></script>",,,Failed
+Line 35, Column 1: script may cause screen flicker.
+"<script src=""/ISATASKV2/js/reportmanagment.js""></script>",,,Failed
+Line 36, Column 1: script user interface may not be accessible.
+"<script src=""/ISATASKV2/js/jquery.tablesorter.js""></script>",,,Failed
+Line 36, Column 1: script may use color alone.
+"<script src=""/ISATASKV2/js/jquery.tablesorter.js""></script>",,,Failed
+Line 36, Column 1: script may cause screen flicker.
+"<script src=""/ISATASKV2/js/jquery.tablesorter.js""></script>",,,Failed
+Line 37, Column 1: script user interface may not be accessible.
+"<script src=""/ISATASKV2/js/timeout-dialog/timeout-dialog-cookie.js""></script>",,,Failed
+Line 37, Column 1: script may use color alone.
+"<script src=""/ISATASKV2/js/timeout-dialog/timeout-dialog-cookie.js""></script>",,,Failed
+Line 37, Column 1: script may cause screen flicker.
+"<script src=""/ISATASKV2/js/timeout-dialog/timeout-dialog-cookie.js""></script>",,,Failed
+Line 38, Column 1: script user interface may not be accessible.
+"<script type=""text/javascript"">var kvExpandRow_d949bf1c = {""gridId"":""w0"",""hiddenFromExport"":true,""de ...",,,Failed
+Line 38, Column 1: script may use color alone.
+"<script type=""text/javascript"">var kvExpandRow_d949bf1c = {""gridId"":""w0"",""hiddenFromExport"":true,""de ...",,,Failed
+Line 38, Column 1: script may cause screen flicker.
+"<script type=""text/javascript"">var kvExpandRow_d949bf1c = {""gridId"":""w0"",""hiddenFromExport"":true,""de ...",,,Failed
+Line 57, Column 1: Words or phrases that are not in the document's primary language may not be identified.
+"<body>
+
+<header>
+     <a href=""#page-title"" class=""skip-navigation sr-only sr-only-focusable"">Ski ...",,,Failed
+Line 57, Column 1: Visual lists may not be properly marked.
+"<body>
+
+<header>
+     <a href=""#page-title"" class=""skip-navigation sr-only sr-only-focusable"">Ski ...",,,Failed
+Line 57, Column 1: "Document may be missing a ""skip to content"" link."
+"<body>
+
+<header>
+     <a href=""#page-title"" class=""skip-navigation sr-only sr-only-focusable"">Ski ...",,,Failed
+Line 57, Column 1: Tabular information may be missing table markup.
+"<body>
+
+<header>
+     <a href=""#page-title"" class=""skip-navigation sr-only sr-only-focusable"">Ski ...",,,Failed
+Line 57, Column 1: dir attribute may be required to identify changes in text direction.
+"<body>
+
+<header>
+     <a href=""#page-title"" class=""skip-navigation sr-only sr-only-focusable"">Ski ...",,,Failed
+Line 57, Column 1: Site missing site map.
+"<body>
+
+<header>
+     <a href=""#page-title"" class=""skip-navigation sr-only sr-only-focusable"">Ski ...",,,Failed
+Line 57, Column 1: "Text may refer to items by shape, size, or relative position alone."
+"<body>
+
+<header>
+     <a href=""#page-title"" class=""skip-navigation sr-only sr-only-focusable"">Ski ...",,,Failed
+Line 57, Column 1: Long quotations may not be marked using the blockquote element.
+"<body>
+
+<header>
+     <a href=""#page-title"" class=""skip-navigation sr-only sr-only-focusable"">Ski ...",,,Failed
+Line 57, Column 1: Unicode right-to-left marks or left-to-right marks may be required.
+"<body>
+
+<header>
+     <a href=""#page-title"" class=""skip-navigation sr-only sr-only-focusable"">Ski ...",,,Failed
+Line 57, Column 1: Groups of links with a related purpose are not marked.
+"<body>
+
+<header>
+     <a href=""#page-title"" class=""skip-navigation sr-only sr-only-focusable"">Ski ...",,,Failed
+Line 57, Column 1: Repeated components may not appear in the same relative order each time they appear.
+"<body>
+
+<header>
+     <a href=""#page-title"" class=""skip-navigation sr-only sr-only-focusable"">Ski ...",,,Failed
+Line 60, Column 6: Link text may not be meaningful.
+"<a href=""#page-title"" class=""skip-navigation sr-only sr-only-focusable"">Skip Navigation</a>",,,Failed
+Line 60, Column 6: Anchor text may not identify the link destination.
+"<a href=""#page-title"" class=""skip-navigation sr-only sr-only-focusable"">Skip Navigation</a>",,,Failed
+Line 62, Column 7: Link text may not be meaningful.
+"<a class=""navbar-brand"" href=""/ISATASKV2/index.php""><img src=""/ISATASKV2/images/logo_login.png"" alt= ...",,,Failed
+Line 62, Column 7: Anchor text may not identify the link destination.
+"<a class=""navbar-brand"" href=""/ISATASKV2/index.php""><img src=""/ISATASKV2/images/logo_login.png"" alt= ...",,,Failed
+Line 62, Column 59: Image may be using color alone.
+"<img src=""/ISATASKV2/images/logo_login.png"" alt=""IS-A-TASK Logo"" style=""width:125px;height:37px"">",,/ISATASKV2/images/logo_login.png,Failed
+Line 62, Column 59: img element may require a long description.
+"<img src=""/ISATASKV2/images/logo_login.png"" alt=""IS-A-TASK Logo"" style=""width:125px;height:37px"">",,/ISATASKV2/images/logo_login.png,Failed
+Line 62, Column 59: Image may contain text with poor contrast.
+"<img src=""/ISATASKV2/images/logo_login.png"" alt=""IS-A-TASK Logo"" style=""width:125px;height:37px"">",,/ISATASKV2/images/logo_login.png,Failed
+Line 62, Column 59: Image may contain text that is not in Alt text.
+"<img src=""/ISATASKV2/images/logo_login.png"" alt=""IS-A-TASK Logo"" style=""width:125px;height:37px"">",,/ISATASKV2/images/logo_login.png,Failed
+Line 62, Column 59: Alt text is not empty and image may be decorative.
+"<img src=""/ISATASKV2/images/logo_login.png"" alt=""IS-A-TASK Logo"" style=""width:125px;height:37px"">",,/ISATASKV2/images/logo_login.png,Failed
+Line 69, Column 17: Link text may not be meaningful.
+"<a href=""/ISATASKV2/index.php?r=user/options"" title=""Options""><i class=""fa fa-cogs""></i> Options</a>",,,Failed
+Line 69, Column 17: Anchor text may not identify the link destination.
+"<a href=""/ISATASKV2/index.php?r=user/options"" title=""Options""><i class=""fa fa-cogs""></i> Options</a>",,,Failed
+Line 70, Column 20: Link text may not be meaningful.
+"<a href=""/ISATASKV2/index.php?r=user/events&amp;current_tabs=case"" title=""My Events Calendar""><i cla ...",,,Failed
+Line 70, Column 20: Anchor text may not identify the link destination.
+"<a href=""/ISATASKV2/index.php?r=user/events&amp;current_tabs=case"" title=""My Events Calendar""><i cla ...",,,Failed
+Line 71, Column 11: Link text may not be meaningful.
+"<a href=""/ISATASKV2/help/index.php"" title=""Help""><i class=""fa fa-question-circle""></i> Help</a>",,,Failed
+Line 71, Column 11: Anchor text may not identify the link destination.
+"<a href=""/ISATASKV2/help/index.php"" title=""Help""><i class=""fa fa-question-circle""></i> Help</a>",,,Failed
+Line 72, Column 11: Link text may not be meaningful.
+"<a href=""javascript:void(0);"" title=""Logout"" onclick=""$.fn.idleTimeout().logout();""><i class=""fa fa- ...",,,Failed
+Line 72, Column 11: Anchor text may not identify the link destination.
+"<a href=""javascript:void(0);"" title=""Logout"" onclick=""$.fn.idleTimeout().logout();""><i class=""fa fa- ...",,,Failed
+Line 77, Column 27: Link text may not be meaningful.
+"<a href=""/ISATASKV2/index.php?r=site/index"" title=""My Assignments"" onclick=""ActiveMainNavigation(thi ...",,,Failed
+Line 77, Column 27: Anchor text may not identify the link destination.
+"<a href=""/ISATASKV2/index.php?r=site/index"" title=""My Assignments"" onclick=""ActiveMainNavigation(thi ...",,,Failed
+Line 78, Column 20: Link text may not be meaningful.
+"<a href=""/ISATASKV2/index.php?r=media/index"" title=""Media"">Media</a>",,,Failed
+Line 78, Column 20: Anchor text may not identify the link destination.
+"<a href=""/ISATASKV2/index.php?r=media/index"" title=""Media"">Media</a>",,,Failed
+Line 79, Column 8: Link text may not be meaningful.
+"<a href=""/ISATASKV2/index.php?r=mycase/index"" title=""My Cases"">My Cases</a>",,,Failed
+Line 79, Column 8: Anchor text may not identify the link destination.
+"<a href=""/ISATASKV2/index.php?r=mycase/index"" title=""My Cases"">My Cases</a>",,,Failed
+Line 80, Column 12: Link text may not be meaningful.
+"<a href=""/ISATASKV2/index.php?r=team/index"" title=""My Teams"">My Teams</a>",,,Failed
+Line 80, Column 12: Anchor text may not identify the link destination.
+"<a href=""/ISATASKV2/index.php?r=team/index"" title=""My Teams"">My Teams</a>",,,Failed
+Line 81, Column 8: Link text may not be meaningful.
+"<a href=""/ISATASKV2/index.php?r=global-projects/index"" title=""Global Projects"">Global Projects</a>",,,Failed
+Line 81, Column 8: Anchor text may not identify the link destination.
+"<a href=""/ISATASKV2/index.php?r=global-projects/index"" title=""Global Projects"">Global Projects</a>",,,Failed
+Line 82, Column 12: Link text may not be meaningful.
+"<a href=""/ISATASKV2/index.php?r=billing-pricelist/internal-team-pricing"" title=""Billing"">Billing</a>",,,Failed
+Line 82, Column 12: Anchor text may not identify the link destination.
+"<a href=""/ISATASKV2/index.php?r=billing-pricelist/internal-team-pricing"" title=""Billing"">Billing</a>",,,Failed
+Line 83, Column 8: Link text may not be meaningful.
+"<a href=""/ISATASKV2/index.php?r=site/reports"" title=""Reports"">Reports</a>",,,Failed
+Line 83, Column 8: Anchor text may not identify the link destination.
+"<a href=""/ISATASKV2/index.php?r=site/reports"" title=""Reports"">Reports</a>",,,Failed
+Line 83, Column 93: Link text may not be meaningful.
+"<a href=""/ISATASKV2/index.php?r=site/administration"" title=""Administration"">Administration</a>",,,Failed
+Line 83, Column 93: Anchor text may not identify the link destination.
+"<a href=""/ISATASKV2/index.php?r=site/administration"" title=""Administration"">Administration</a>",,,Failed
+Line 88, Column 1: script user interface may not be accessible.
+"<script>
+var baseUrl = '/ISATASKV2/index.php?r=';
+var AdminFormBuilderbaseUrl = '/ISATASKV2';
+
+
+
+ ...",,,Failed
+Line 88, Column 1: script may use color alone.
+"<script>
+var baseUrl = '/ISATASKV2/index.php?r=';
+var AdminFormBuilderbaseUrl = '/ISATASKV2';
+
+
+
+ ...",,,Failed
+Line 88, Column 1: script may cause screen flicker.
+"<script>
+var baseUrl = '/ISATASKV2/index.php?r=';
+var AdminFormBuilderbaseUrl = '/ISATASKV2';
+
+
+
+ ...",,,Failed
+Line 97, Column 3: h1 may be used for formatting.
+"<h1 id=""page-title"" role=""heading"" class=""page-header"">
+			<i class=""fa fa-mouse-pointer""></i> My A ...",,,Failed
+Line 107, Column 183: Link text may not be meaningful.
+"<a id=""ui-id-1"" tabindex=""-1"" role=""presentation"" class=""ui-tabs-anchor"" href=""#tabs-1"">My Cases Ass ...",,,Failed
+Line 107, Column 183: Anchor text may not identify the link destination.
+"<a id=""ui-id-1"" tabindex=""-1"" role=""presentation"" class=""ui-tabs-anchor"" href=""#tabs-1"">My Cases Ass ...",,,Failed
+Line 108, Column 153: Link text may not be meaningful.
+"<a id=""ui-id-2"" tabindex=""-1"" role=""presentation"" class=""ui-tabs-anchor"" href=""#tabs-2"">My Teams Ass ...",,,Failed
+Line 108, Column 153: Anchor text may not identify the link destination.
+"<a id=""ui-id-2"" tabindex=""-1"" role=""presentation"" class=""ui-tabs-anchor"" href=""#tabs-2"">My Teams Ass ...",,,Failed
+Line 110, Column 149: Link text may not be meaningful.
+"<a id=""ui-id-3"" tabindex=""-1"" role=""presentation"" class=""ui-tabs-anchor"" href=""#tabs-3"" onclick=""cha ...",,,Failed
+Line 110, Column 149: Anchor text may not identify the link destination.
+"<a id=""ui-id-3"" tabindex=""-1"" role=""presentation"" class=""ui-tabs-anchor"" href=""#tabs-3"" onclick=""cha ...",,,Failed
+Line 114, Column 279: Table may require a summary.
+"<table class=""kv-grid-table table table-bordered table-striped kv-table-wrap""><colgroup><col class="" ...",,,Failed
+Line 114, Column 279: Data table may require a caption.
+"<table class=""kv-grid-table table table-bordered table-striped kv-table-wrap""><colgroup><col class="" ...",,,Failed
+Line 114, Column 279: "Table may require thead, tfoot and tbody elements to group repeated table row structures."
+"<table class=""kv-grid-table table table-bordered table-striped kv-table-wrap""><colgroup><col class="" ...",,,Failed
+Line 114, Column 279: Layout table may be misusing th elements.
+"<table class=""kv-grid-table table table-bordered table-striped kv-table-wrap""><colgroup><col class="" ...",,,Failed
+Line 118, Column 195: Link text may not be meaningful.
+"<a href=""#""><span class=""glyphicon glyphicon-plus""></span></a>",,,Failed
+Line 118, Column 195: Anchor text may not identify the link destination.
+"<a href=""#""><span class=""glyphicon glyphicon-plus""></span></a>",,,Failed
+Line 123, Column 59: Link text may not be meaningful.
+"<a href=""#""><span class=""glyphicon glyphicon-plus""></span></a>",,,Failed
+Line 123, Column 59: Anchor text may not identify the link destination.
+"<a href=""#""><span class=""glyphicon glyphicon-plus""></span></a>",,,Failed
+Line 129, Column 59: Link text may not be meaningful.
+"<a href=""#""><span class=""glyphicon glyphicon-plus""></span></a>",,,Failed
+Line 129, Column 59: Anchor text may not identify the link destination.
+"<a href=""#""><span class=""glyphicon glyphicon-plus""></span></a>",,,Failed
+Line 135, Column 59: Link text may not be meaningful.
+"<a href=""#""><span class=""glyphicon glyphicon-plus""></span></a>",,,Failed
+Line 135, Column 59: Anchor text may not identify the link destination.
+"<a href=""#""><span class=""glyphicon glyphicon-plus""></span></a>",,,Failed
+Line 141, Column 59: Link text may not be meaningful.
+"<a href=""#""><span class=""glyphicon glyphicon-plus""></span></a>",,,Failed
+Line 141, Column 59: Anchor text may not identify the link destination.
+"<a href=""#""><span class=""glyphicon glyphicon-plus""></span></a>",,,Failed
+Line 148, Column 214: Table may require a summary.
+"<table class=""kv-grid-table table table-bordered table-striped kv-table-wrap""><colgroup><col class="" ...",,,Failed
+Line 148, Column 214: Data table may require a caption.
+"<table class=""kv-grid-table table table-bordered table-striped kv-table-wrap""><colgroup><col class="" ...",,,Failed
+Line 148, Column 214: "Table may require thead, tfoot and tbody elements to group repeated table row structures."
+"<table class=""kv-grid-table table table-bordered table-striped kv-table-wrap""><colgroup><col class="" ...",,,Failed
+Line 148, Column 214: Layout table may be misusing th elements.
+"<table class=""kv-grid-table table table-bordered table-striped kv-table-wrap""><colgroup><col class="" ...",,,Failed
+Line 152, Column 193: Link text may not be meaningful.
+"<a href=""#""><span class=""glyphicon glyphicon-plus""></span></a>",,,Failed
+Line 152, Column 193: Anchor text may not identify the link destination.
+"<a href=""#""><span class=""glyphicon glyphicon-plus""></span></a>",,,Failed
+Line 157, Column 59: Link text may not be meaningful.
+"<a href=""#""><span class=""glyphicon glyphicon-plus""></span></a>",,,Failed
+Line 157, Column 59: Anchor text may not identify the link destination.
+"<a href=""#""><span class=""glyphicon glyphicon-plus""></span></a>",,,Failed
+Line 163, Column 59: Link text may not be meaningful.
+"<a href=""#""><span class=""glyphicon glyphicon-plus""></span></a>",,,Failed
+Line 163, Column 59: Anchor text may not identify the link destination.
+"<a href=""#""><span class=""glyphicon glyphicon-plus""></span></a>",,,Failed
+Line 169, Column 59: Link text may not be meaningful.
+"<a href=""#""><span class=""glyphicon glyphicon-plus""></span></a>",,,Failed
+Line 169, Column 59: Anchor text may not identify the link destination.
+"<a href=""#""><span class=""glyphicon glyphicon-plus""></span></a>",,,Failed
+Line 175, Column 59: Link text may not be meaningful.
+"<a href=""#""><span class=""glyphicon glyphicon-plus""></span></a>",,,Failed
+Line 175, Column 59: Anchor text may not identify the link destination.
+"<a href=""#""><span class=""glyphicon glyphicon-plus""></span></a>",,,Failed
+Line 182, Column 6: label may not describe its associated control.
+"<input id=""activity_offset"" value=""0"" type=""hidden"">",,,Failed
+Line 187, Column 9: label may not describe its associated control.
+"<input value=""0"" id=""noactivities"" type=""hidden"">",,,Failed
+Line 188, Column 9: Table may require a summary.
+"<table class=""kv-grid-table table table-hover table-condensed table-striped today-activity-table"">
+ ...",,,Failed
+Line 188, Column 9: Data table may require a caption.
+"<table class=""kv-grid-table table table-hover table-condensed table-striped today-activity-table"">
+ ...",,,Failed
+Line 188, Column 9: "Table may require thead, tfoot and tbody elements to group repeated table row structures."
+"<table class=""kv-grid-table table table-hover table-condensed table-striped today-activity-table"">
+ ...",,,Failed
+Line 188, Column 9: Layout table may be misusing th elements.
+"<table class=""kv-grid-table table table-hover table-condensed table-striped today-activity-table"">
+ ...",,,Failed
+Line 188, Column 9: Table may require colgroup and col elements to group table columns.
+"<table class=""kv-grid-table table table-hover table-condensed table-striped today-activity-table"">
+ ...",,,Failed
+Line 222, Column 1: script user interface may not be accessible.
+"<script type=""text/javascript"">
+ $(function() {
+    $( ""#tabs"" ).tabs({
+      beforeLoad: functio ...",,,Failed
+Line 222, Column 1: script may use color alone.
+"<script type=""text/javascript"">
+ $(function() {
+    $( ""#tabs"" ).tabs({
+      beforeLoad: functio ...",,,Failed
+Line 222, Column 1: script may cause screen flicker.
+"<script type=""text/javascript"">
+ $(function() {
+    $( ""#tabs"" ).tabs({
+      beforeLoad: functio ...",,,Failed
+Line 436, Column 74: Link text may not be meaningful.
+"<a href=""#"" title=""Terms"">Terms</a>",,,Failed
+Line 436, Column 74: Anchor text may not identify the link destination.
+"<a href=""#"" title=""Terms"">Terms</a>",,,Failed
+Line 442, Column 3: Link text may not be meaningful.
+"<a title=""Loading"" href=""javascript:void(0);""><svg class=""uil-spin"" preserveaspectratio=""xMidYMid"" v ...",,,Failed
+Line 442, Column 3: Anchor text may not identify the link destination.
+"<a title=""Loading"" href=""javascript:void(0);""><svg class=""uil-spin"" preserveaspectratio=""xMidYMid"" v ...",,,Failed
+Line 446, Column 1: script user interface may not be accessible.
+"<script src=""/ISATASKV2/assets/ba3e6ca8/js/kv-grid-expand.js""></script>",,,Failed
+Line 446, Column 1: script may use color alone.
+"<script src=""/ISATASKV2/assets/ba3e6ca8/js/kv-grid-expand.js""></script>",,,Failed
+Line 446, Column 1: script may cause screen flicker.
+"<script src=""/ISATASKV2/assets/ba3e6ca8/js/kv-grid-expand.js""></script>",,,Failed
+Line 447, Column 1: script user interface may not be accessible.
+"<script src=""/ISATASKV2/assets/ba3e6ca8/js/kv-grid-export.js""></script>",,,Failed
+Line 447, Column 1: script may use color alone.
+"<script src=""/ISATASKV2/assets/ba3e6ca8/js/kv-grid-export.js""></script>",,,Failed
+Line 447, Column 1: script may cause screen flicker.
+"<script src=""/ISATASKV2/assets/ba3e6ca8/js/kv-grid-export.js""></script>",,,Failed
+Line 448, Column 1: script user interface may not be accessible.
+"<script src=""/ISATASKV2/assets/ba3e6ca8/js/jquery.resizableColumns.js""></script>",,,Failed
+Line 448, Column 1: script may use color alone.
+"<script src=""/ISATASKV2/assets/ba3e6ca8/js/jquery.resizableColumns.js""></script>",,,Failed
+Line 448, Column 1: script may cause screen flicker.
+"<script src=""/ISATASKV2/assets/ba3e6ca8/js/jquery.resizableColumns.js""></script>",,,Failed
+Line 449, Column 1: script user interface may not be accessible.
+"<script src=""/ISATASKV2/assets/11e3d3c8/js/bootstrap.js""></script>",,,Failed
+Line 449, Column 1: script may use color alone.
+"<script src=""/ISATASKV2/assets/11e3d3c8/js/bootstrap.js""></script>",,,Failed
+Line 449, Column 1: script may cause screen flicker.
+"<script src=""/ISATASKV2/assets/11e3d3c8/js/bootstrap.js""></script>",,,Failed
+Line 450, Column 1: script user interface may not be accessible.
+"<script src=""/ISATASKV2/assets/8fc84160/yii.gridView.js""></script>",,,Failed
+Line 450, Column 1: script may use color alone.
+"<script src=""/ISATASKV2/assets/8fc84160/yii.gridView.js""></script>",,,Failed
+Line 450, Column 1: script may cause screen flicker.
+"<script src=""/ISATASKV2/assets/8fc84160/yii.gridView.js""></script>",,,Failed
+Line 451, Column 1: script user interface may not be accessible.
+"<script type=""text/javascript"">jQuery(document).ready(function () {
+kvExpandRow(kvExpandRow_d949bf1 ...",,,Failed
+Line 451, Column 1: script may use color alone.
+"<script type=""text/javascript"">jQuery(document).ready(function () {
+kvExpandRow(kvExpandRow_d949bf1 ...",,,Failed
+Line 451, Column 1: script may cause screen flicker.
+"<script type=""text/javascript"">jQuery(document).ready(function () {
+kvExpandRow(kvExpandRow_d949bf1 ...",,,Failed

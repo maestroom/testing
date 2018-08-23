@@ -1,0 +1,46 @@
+/* Custom checkboxes, radios */
+
+/*	wrapper divs */
+.custom-checkbox,.custom-radio { position:relative;}
+
+/* input, label positioning */
+input[type="checkbox"],input[type="radio"] {}
+.options-main  input[type="checkbox"],input[type="radio"] {visibility:visible!important;}
+
+.form-builder-ol input[type="checkbox"],
+.form-builder-ol input[type="radio"] {visibility:visible !important;}
+
+.custom-checkbox input,.custom-radio input { z-index:-1; position:absolute; /* left:2px; top:2px; */ left:9px; /*top:17px;*/ top:3px; margin:0; opacity:0; /* visibility:hidden; */}
+.custom-checkbox label,.custom-radio label { /* display:block; */ display:inline-block; position:relative; font-size:12px; /* padding:2px 0px 2px 27px; */ padding:0px; width:21px; height:21px; line-height:14px; margin:0px; cursor:pointer; font-weight:normal;}
+.custom-checkbox:focus,
+.custom-radio:focus { outline:2px solid #333; border:2px solid #333;}
+
+.custom-full-width {  width:100%; }
+.custom-full-width .custom-checkbox label,
+.custom-full-width .custom-radio label { display:block; padding:1px 2px 0px 27px; width:auto; /*height:auto;*/ clear:both;}
+
+.custom-inline-block-width { width:auto;}
+.custom-inline-block-width .custom-checkbox label,
+.custom-inline-block-width .custom-radio label { display:inline-block; padding:0px 5px 0px 27px; width:auto; height:auto; margin:2px 0px;}
+
+#mergeinvoice-dialog .custom-inline-block-width .custom-checkbox label { display:inline-block; padding:3px 5px 0px 27px; width:auto; height:auto; margin:2px 0px;}
+.custom-inline-right {}
+
+/* states */
+.custom-checkbox label { background:url(../images/checkbox.png) no-repeat -17px -15px;}
+.custom-radio label { background:url(../images/radiobutton.png) no-repeat -13px -18px;}
+/* .custom-checkbox label,.custom-radio label { background-position:-13px -18px;} */
+.custom-checkbox label.hover { background:url(../images/checkbox-hover.png) no-repeat -17px -17px;}
+.custom-checkbox label.focus { background:url(../images/checkbox-hover.png) no-repeat -17px -17px;}
+.custom-radio label.hover { background:url(../images/radiobutton-hover.png) no-repeat -13px -18px;}
+.custom-radio label.focus { background:url(../images/radiobutton-hover.png) no-repeat -13px -18px;}
+
+.custom-checkbox label.checked { background:url(../images/checkbox-active.png) no-repeat -17px -15px;}
+.custom-radio label.checked { background:url(../images/radiobutton-active.png) no-repeat -13px -18px;}
+.custom-checkbox label.checkedHover,
+.custom-checkbox label.checkedFocus { background:url(../images/checkbox-active-hover.png) no-repeat -17px -17px;}
+
+.custom-checkbox label,.custom-radio label { outline:0px none;  border:solid 2px transparent; border-radius:2px; }
+.custom-checkbox label.focus,.custom-radio label.focus { outline:0px none;  border:2px solid #333;}
+
+.custom-checkbox label.disabled, .custom-radio label.disabled { cursor: auto; color: #B1B1B1;}

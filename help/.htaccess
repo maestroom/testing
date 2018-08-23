@@ -1,0 +1,12 @@
+RewriteEngine on 
+RewriteCond %{HTTP_REFERER} !^http://(www\.)?128.168.0.128 [NC] 
+RewriteCond %{HTTP_REFERER} !^http://(www\.)?128.168.0.128.*$ [NC] 
+RewriteRule \.(gif|jpg|png)$ - [F]
+
+Options -Indexes
+
+#php_flag engine off
+
+# RewriteEngine On
+# RewriteCond %{HTTPS} !=on
+# RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]

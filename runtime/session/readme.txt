@@ -1,0 +1,1 @@
+This directory is left intentially blank until sessions are created in each portal instance

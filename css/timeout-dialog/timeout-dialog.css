@@ -1,0 +1,131 @@
+/* Some default button styles */
+.timeout-dialog button {
+  -webkit-border-radius: 4px !important;
+  -moz-border-radius: 4px !important;
+  border-radius: 4px !important;
+  border: 1px solid #cccccc !important;
+  border-width: 1px !important;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25) !important;
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 1px 1px rgba(0, 0, 0, 0.1) !important;
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 1px 1px rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 1px 1px rgba(0, 0, 0, 0.1) !important;
+  cursor: pointer !important;
+  color: #333333 !important;
+  display: inline-block !important;
+  font-size: 14px !important;
+  line-height: normal !important;
+  padding: 5px 10px !important;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75) !important;
+  cursor: pointer !important;
+  -webkit-appearance: button !important;
+  font-size: 100% !important;
+  margin: 0 !important;
+  vertical-align: baseline !important;
+}
+
+.timeout-dialog .button:hover, button:hover {
+  text-decoration: none !important;
+  background-position: 0 -15px !important;
+}
+
+.timeout-dialog .button:focus, button:focus {
+  -webkit-box-shadow: 0 0px 2px rgba(0, 0, 0, 0.4) !important;
+  -moz-box-shadow: 0 0px 2px rgba(0, 0, 0, 0.4) !important;
+  box-shadow: 0 0px 2px rgba(0, 0, 0, 0.4) !important;
+  outline: none !important;
+}
+
+/* Timeout Dialog Styles */
+.timeout-dialog {
+  padding: 15px !important;
+  position: absolute !important;
+  background: #eeeeee !important;
+  border: 1px solid #ffffff !important;
+  -webkit-box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5) !important;
+  -moz-box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5) !important;
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5) !important;
+  -webkit-border-radius: 5px !important;
+  -moz-border-radius: 5px !important;
+  border-radius: 5px !important;
+}
+.timeout-dialog .ui-widget-header {
+	background: none !important;
+	border: none !important;
+}
+.timeout-dialog .ui-dialog-title {
+  font-size: 16px !important;
+  font-weight: bold !important;
+  color:#333 !important;
+}
+#timeout-dialog {
+  padding: 18px 5px !important;
+  background: #eeeeee url("../../images/timeout-icon.png") no-repeat 15px 15px !important;
+}
+.timeout-dialog .ui-dialog-titlebar-close {
+  display: none !important;
+}
+.timeout-dialog .ui-dialog-buttonpane {
+  margin-top: 15px !important;
+  background: none !important;
+}
+.timeout-dialog  ~ .ui-widget-overlay {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  background: #000 !important;
+  filter: alpha(opacity=40) !important;
+  -khtml-opacity: 0.4 !important;
+  -moz-opacity: 0.4 !important;
+  opacity: 0.4 !important;
+}
+.timeout-dialog p {
+  margin: 0 0 5px 80px !important;
+}
+.timeout-dialog #timeout-keep-signin-btn {
+  color: #FFF !important;
+  background-color: #0f5895 !important;
+  background-repeat: repeat-x !important;
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#377bb2), to(#0f5895)) !important;
+  background-image: -moz-linear-gradient(top, #377bb2, #0f5895) !important;
+  background-image: -ms-linear-gradient(top, #377bb2, #0f5895) !important;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #377bb2), color-stop(100%, #0f5895)) !important;
+  background-image: -webkit-linear-gradient(top, #377bb2, #0f5895) !important;
+  background-image: -o-linear-gradient(top, #377bb2, #0f5895) !important;
+  background-image: linear-gradient(top, #377bb2, #0f5895) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#377bb2', endColorstr='#0f5895', GradientType=0) !important;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25) !important;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25) !important;
+  color: #ffffff !important;
+  text-shadow: none !important;
+  margin: 5px 10px 5px 0 !important;
+}
+.timeout-dialog #timeout-sign-out-button {
+  color: #FFF !important;
+  background-color: #e6e6e6 !important;
+  background-repeat: repeat-x !important;
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#ffffff), to(#e6e6e6)) !important;
+  background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6) !important;
+  background-image: -ms-linear-gradient(top, #ffffff, #e6e6e6) !important;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #e6e6e6)) !important;
+  background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6) !important;
+  background-image: -o-linear-gradient(top, #ffffff, #e6e6e6) !important;
+  background-image: linear-gradient(top, #ffffff, #e6e6e6) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0) !important;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25) !important;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25) !important;
+  color: #000000 !important;
+  text-shadow: none !important;
+  margin: 5px 0 !important;
+}
+.timeout-dialog #timeout-countdown {
+  	font-weight: bold !important;
+}
+#timeout-dialog .countdown-holder {
+  	font-weight: bold !important;	
+}
+#ui-dialog-title-timeout-dialog {
+	color:#000!important;
+}
+/*.ui-dialog .ui-dialog-buttonpane button{
+	font:14px Verdana,Arial,sans-serif!important;
+}*/

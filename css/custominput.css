@@ -1,0 +1,85 @@
+/************************ FORM RADIO BUTTONS & CHECKBOXES ************************/
+.custom-checkbox, .custom-radio {
+	position: relative;
+	clear: both;
+}
+.inline-radios .custom-radio {
+	display: inline-block;
+}
+.custom-checkbox input, .custom-radio input {
+	position: absolute;
+	left: 6px;
+	top: 6px;
+	margin: 0;
+	z-index: 0;
+}
+.IE7 .custom-checkbox input, .IE7 .custom-radio input, .IE8 .custom-checkbox input, .IE8 .custom-radio input, .IE10 .custom-checkbox input, .IE10 .custom-radio input {
+	left: 4px;
+	top: 4px;
+}
+.custom-checkbox label, .custom-radio label {
+	cursor: pointer;
+	display: inline-block;
+	line-height: 1.5em;
+	min-height: 24px;
+	margin: 0 0 0.3em;
+	padding: 0 0 6px 30px;
+	position: relative;
+	z-index: inherit;
+}
+
+.custom-checkbox label.disabled, .custom-radio label.disabled {
+	cursor: auto;	
+	color: #B1B1B1;
+}
+
+.custom-checkbox label {
+	background: url(../../../../global/images/checkbox.png) no-repeat;
+}
+.custom-radio label {
+	background: url(../../../../global/images/radiobutton.png) no-repeat;
+}
+.custom-checkbox label, .custom-radio label {
+	background-position: -13px -14px;
+	font-weight: normal;
+	margin-right: 23px;
+	vertical-align: middle;
+}
+.custom-checkbox label.noMargin, .custom-radio label.noMargin {
+	margin-right: 0;
+}
+.custom-checkbox label.focus, .custom-radio label.focus {
+	outline: 2px solid #029DD3;
+}
+.custom-checkbox label.hover, .custom-checkbox label.focus, .custom-radio label.hover, .custom-radio label.focus {
+	background-position: -13px -214px;
+}
+.custom-checkbox label.checked, .custom-radio label.checked {
+	background-position: -13px -414px;
+}
+.custom-checkbox label.checkedHover, .custom-checkbox label.checkedFocus, .custom-radio label.checkedHover, .custom-radio label.checkedFocus {
+	background-position: -13px -614px;
+}
+.custom-checkbox label.disabled, .custom-radio label.disabled {
+	background-position: -13px -214px;
+}
+.inline-select label, .inline-select select {
+	display: inline;
+}
+.cardContainer > .row-fluid > .inline-select select {
+	margin-bottom: 2px;
+}
+.span4.inline-select {
+	text-align: right;
+}
+.inline-select input {
+	width: 70%;
+	margin-left: 3px;
+}
+label i {
+	padding-left: 20px;
+}
+.sectionSimple input, .sectionSimple select {
+	margin-bottom:0;
+}
+/* testing lock */

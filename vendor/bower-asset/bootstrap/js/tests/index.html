@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Bootstrap Plugin Test Suite</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- jQuery -->
+    <script src="vendor/jquery.min.js"></script><noscript></noscript>
+
+    <script>
+      // Disable jQuery event aliases to ensure we don't accidentally use any of them
+      (function () {
+        var eventAliases = [
+          'blur',
+          'focus',
+          'focusin',
+          'focusout',
+          'load',
+          'resize',
+          'scroll',
+          'unload',
+          'click',
+          'dblclick',
+          'mousedown',
+          'mouseup',
+          'mousemove',
+          'mouseover',
+          'mouseout',
+          'mouseenter',
+          'mouseleave',
+          'change',
+          'select',
+          'submit',
+          'keydown',
+          'keypress',
+          'keyup',
+          'error',
+          'contextmenu',
+          'hover',
+          'bind',
+          'unbind',
+          'delegate',
+          'undelegate'
+        ]
+        for (var i = 0; i < eventAliases.length; i++) {
+          $.fn[eventAliases[i]] = undefined
+        }
+      })()
+    </script><noscript></noscript>
+
+
+    <!-- QUnit -->
+    <link rel="stylesheet" href="vendor/qunit.css" media="screen">
+    <script src="vendor/qunit.js"></script><noscript></noscript>
+
+    <script>
+      // See https://github.com/axemclion/grunt-saucelabs#test-result-details-with-qunit
+      var log = []
+      // Require assert.expect in each test.
+      QUnit.config.requireExpects = true
+      QUnit.done(function (testResults) {
+        var tests = []
+        for (var i = 0, len = log.length; i < len; i++) {
+          var details = log[i]
+          tests.push({
+            name: details.name,
+            result: details.result,
+            expected: details.expected,
+            actual: details.actual,
+            source: details.source
+          })
+        }
+        testResults.tests = tests
+
+        window.global_test_results = testResults
+      })
+
+      QUnit.testStart(function (testDetails) {
+        $(window).scrollTop(0)
+        QUnit.log(function (details) {
+          if (!details.result) {
+            details.name = testDetails.name
+            log.push(details)
+          }
+        })
+      })
+
+      // Cleanup
+      QUnit.testDone(function () {
+        $('#qunit-fixture').empty()
+        $('#modal-test, .modal-backdrop').remove()
+      })
+
+      // Display fixture on-screen on iOS to avoid false positives
+      if (/iPhone|iPad|iPod/.test(navigator.userAgent)) {
+        QUnit.begin(function() {
+          $('#qunit-fixture').css({ top: 0, left: 0 })
+        })
+
+        QUnit.done(function () {
+          $('#qunit-fixture').css({ top: '', left: '' })
+        })
+      }
+
+      // Disable deprecated global QUnit method aliases in preparation for QUnit v2
+      (function () {
+        var methodNames = [
+          'async',
+          'asyncTest',
+          'deepEqual',
+          'equal',
+          'expect',
+          'module',
+          'notDeepEqual',
+          'notEqual',
+          'notPropEqual',
+          'notStrictEqual',
+          'ok',
+          'propEqual',
+          'push',
+          'start',
+          'stop',
+          'strictEqual',
+          'test',
+          'throws'
+        ];
+        for (var i = 0; i < methodNames.length; i++) {
+          var methodName = methodNames[i];
+          window[methodName] = undefined;
+        }
+      })();
+    </script><noscript></noscript>
+
+
+    <!-- Plugin sources -->
+    <script>$.support.transition = false</script><noscript></noscript>
+
+    <script src="../../js/alert.js"></script><noscript></noscript>
+
+    <script src="../../js/button.js"></script><noscript></noscript>
+
+    <script src="../../js/carousel.js"></script><noscript></noscript>
+
+    <script src="../../js/collapse.js"></script><noscript></noscript>
+
+    <script src="../../js/dropdown.js"></script><noscript></noscript>
+
+    <script src="../../js/modal.js"></script><noscript></noscript>
+
+    <script src="../../js/scrollspy.js"></script><noscript></noscript>
+
+    <script src="../../js/tab.js"></script><noscript></noscript>
+
+    <script src="../../js/tooltip.js"></script><noscript></noscript>
+
+    <script src="../../js/popover.js"></script><noscript></noscript>
+
+    <script src="../../js/affix.js"></script><noscript></noscript>
+
+
+    <!-- Unit tests -->
+    <script src="unit/alert.js"></script><noscript></noscript>
+
+    <script src="unit/button.js"></script><noscript></noscript>
+
+    <script src="unit/carousel.js"></script><noscript></noscript>
+
+    <script src="unit/collapse.js"></script><noscript></noscript>
+
+    <script src="unit/dropdown.js"></script><noscript></noscript>
+
+    <script src="unit/modal.js"></script><noscript></noscript>
+
+    <script src="unit/scrollspy.js"></script><noscript></noscript>
+
+    <script src="unit/tab.js"></script><noscript></noscript>
+
+    <script src="unit/tooltip.js"></script><noscript></noscript>
+
+    <script src="unit/popover.js"></script><noscript></noscript>
+
+    <script src="unit/affix.js"></script><noscript></noscript>
+
+
+  </head>
+  <body>
+    <div id="qunit-container">
+      <div id="qunit"></div>
+      <div id="qunit-fixture"></div>
+    </div>
+  </body>
+</html>
